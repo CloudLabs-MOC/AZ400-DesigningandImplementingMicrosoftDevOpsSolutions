@@ -19,8 +19,6 @@ After you complete this lab, you will be able to:
 1. If you already have a GitHub account that you can use for this lab, else follow the instructions to create an account.
 
 1. Navigate to the https://github.com/ Click on Signup.
-
-   ![Github](images/mod6_21.png)
    
 1. Provide the email address and click on continue.
 
@@ -137,6 +135,9 @@ In this task, you will review the results of creating the DevOps Starter project
 1.  On the GitHub repository page, in the toolbar, click **Actions**.
 1.  In the **All workflows** section, click the **Update Index.cshtml** entry.
 1.  In the **devops-starter-workflow.yml** section, monitor the progress of deployment and verify that it completed successfully.
+
+![Azure DevOps](./images/mod03_7.png)
+
 1.  Switch to the browser window displaying the DevOps Starter blade in the Azure portal and click the **Browse** link next to the **Application endpoint** entry.
 1.  In the newly opened web browser window, verify that the updated text representing the change you committed in the GitHub repo is displayed on the web app home page.
 
