@@ -151,6 +151,9 @@ For this lab scenario, we have an app that connects to a MySQL database. We inte
     > **Note**: You can search by name or ID of the principal.
 
 1.  Back on the **Add access policy** blade, in the **Secret permissions** drop down list, select checkboxes next to the **Get** and **List** permissions and then click **Add**. 
+
+    ![Azure DevOps](./images/mod5_13.png)
+
 1.  Back on the **Access policy** tab of the **Create key vault** blade, click **Review + create** and, on the **Review + create** blade, click **Create**. 
 
     > **Note**: Wait for the Azure Key vault to be provisioned. This should take less than 1 minute.
@@ -183,7 +186,7 @@ In this task, you will configure the Azure Pipeline to retrieve the secret from 
 
     > **Note**: You need to authorize the pipeline to deploy to Azure. Azure pipelines can automatically create a service connection with a new service principal, **but we want to use the one we created earlier**, as it has been authorized to read the secret. 
 
-1.  Select **Run on agent** and modify **Agent pool** field to **Azure Pipelines** and agent specification **ubuntu 18.04**.
+1.  Select **Run on agent** and modify **Agent pool** field to **Azure Pipelines** and agent specification **ubuntu 20.04**.
 
 1.  Select the **Azure Key Vault** task and, on the right side, in the **Azure Key Vault** task properties, next to the **Azure subscription** label, click **Manage**. 
 This will open another browser tab displaying the **Service connections** pane in the Azure DevOps portal.
