@@ -184,7 +184,7 @@ In this task, you will create two Azure web apps representing the **Canary** and
     | Setting | Value |
     | --- | --- |
     | Alert rule name | **PartsUnlimited_FailedRequests** |
-    | Severity | **Sev 2** |
+    | Severity | **2- Warning** |
     | Automatically resolve alerts | cleared |
 
     > **Note**: Automatically resolve alerts are present under the advanced option.
@@ -337,7 +337,6 @@ In this task, you will enable the post-deployment gate for the Canary Environmen
 
 1.  Back on the **PartsUnlimited-CD** pane, click **Save**, and in the **Save** dialog box, click **OK**.
 
-
 ### Exercise 3: Test release gates
 
 In this exercise, you will test the release gates by updating the application, which will trigger a deployment.
@@ -392,7 +391,7 @@ In this task, you will track the release process with the release gates enabled.
 
 1.  Return to the home page of the PartsUnlimited web site, click **More** again, and repeat this step a few more times.
 
-1.  Validate that failed requests were detected by Application Insights by navigating to the Application Insights blade of the **Canary** web app page, and, on the Application Insights blade, click **Alerts**, and verify that the page lists one or more **Sev 2** alerts. 
+1.  Validate that failed requests were detected by Application Insights by navigating to the Application Insights blade of the **Canary** web app page, and, on the Application Insights blade, click **Alerts**, and verify that the page lists one or more **2- Warning** alerts. 
 
     > **Note**: Since there is an alert triggered by the exception, **Query Azure Monitor** gate will fail. This, in turn, will prevent deployment to the **Production** environment.
 
