@@ -1,4 +1,4 @@
-# Lab 12: Setting Up and Running Functional Tests
+# Lab 12: Setting Up and Running Functional Tests
 # Student lab manual
 
 ## Lab overview
@@ -20,13 +20,6 @@ After you complete this lab, you will be able to:
 ## Instructions
 
 ### Before you start
-
-#### Sign in to the lab virtual machine
-
-Ensure that you're signed in to your Windows 10 virtual machine by using the following credentials:
-    
--   Username: **Student**
--   Password: **Pa55w.rd**
 
 #### Review applications required for this lab
 
