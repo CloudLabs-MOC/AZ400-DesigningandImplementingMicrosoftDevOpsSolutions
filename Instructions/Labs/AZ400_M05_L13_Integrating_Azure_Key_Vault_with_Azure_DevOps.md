@@ -141,16 +141,16 @@ For this lab scenario, we have an app that connects to a MySQL database. We inte
 
     > **Note**: Replace Deployment ID, it can be obtained from environment deatails page.
 
-1.  On the **Access policy** tab of the **Create key vault** blade, click **+ Add Access Policy** to setup a new policy.
+1.  On the **Access policy** tab of the **Create key vault** blade, select **Vault access policy** on the **Access configuration**.
+
+1.  Select **+ Create** on the **Access Policies**, now on the **Add access policy** blade, in the **Secret permissions** list, select checkboxes next to the **Get** and **List** permissions and then click **Next**. 
 
     > **Note**: You need to secure access to your key vaults by allowing only authorized applications and users. To access the data from the vault, you will need to provide read (Get) permissions to the service principal that you will be using for authentication in the pipeline. 
 
-1.  On the **Add access policy** blade, click the **None selected** link directly under the **Select principal** label. 
-1.  On the **Principal** blade, search for the security principal that you created in the previous exercise, select it, and then click **Select**. 
+1.  On the **Principal** blade, search for the security principal that you created in the previous exercise, select it, and then click **Select** and then select **Next** and **Create**. 
 
     > **Note**: You can search by name or ID of the principal.
-
-1.  Back on the **Add access policy** blade, in the **Secret permissions** drop down list, select checkboxes next to the **Get** and **List** permissions and then click **Add**. 
+    > 
 1.  Back on the **Access policy** tab of the **Create key vault** blade, click **Review + create** and, on the **Review + create** blade, click **Create**. 
 
     > **Note**: Wait for the Azure Key vault to be provisioned. This should take less than 1 minute.
@@ -183,7 +183,7 @@ In this task, you will configure the Azure Pipeline to retrieve the secret from 
 
     > **Note**: You need to authorize the pipeline to deploy to Azure. Azure pipelines can automatically create a service connection with a new service principal, **but we want to use the one we created earlier**, as it has been authorized to read the secret. 
 
-1.  Select **Run on agent** and modify **Agent pool** field to **Azure Pipelines** and agent specification **ubuntu 18.04**.
+1.  Select **Run on agent** and modify **Agent pool** field to **Azure Pipelines** and agent specification **ubuntu 20.04**.
 
 1.  Select the **Azure Key Vault** task and, on the right side, in the **Azure Key Vault** task properties, next to the **Azure subscription** label, click **Manage**. 
 This will open another browser tab displaying the **Service connections** pane in the Azure DevOps portal.
@@ -212,7 +212,7 @@ This will open another browser tab displaying the **Service connections** pane i
 
     > **Note**: The **Override template parameters** content references the **sqldbpassword** variable to set the mySQL admin password. This will provision the MySQL database defined in the ARM template using the password that you have specified in the key vault. 
 
-1.  You may complete the pipeline definition by specifying the subscription (if new subscription is used in the project, click on **Authorize** )and location for the task. **Repeat** the same for the last task in the pipeline **Azure App Service Deploy** (choose the subscription from the **Available Azure service connection** section in the dropdown). 
+1.  You may complete the pipeline definition by specifying the subscription, and in the **Azure subscription** dropdown list, select the  **kv-service-connection** entry and **location** for the task. **Repeat** the same for the last task in the pipeline **Azure App Service Deploy** (choose the subscription from the **Available Azure service connection** section in the dropdown). 
 
     > **Note**: In the Azure subscription dropdown list, you will see **Available Azure service connections** for those susbcriptions that have already been authorized to be connected to Azure. If you select the authorized subscription again (from **Available Azure subscriptions** list) and try to **Authorize**, the process will fail.
 

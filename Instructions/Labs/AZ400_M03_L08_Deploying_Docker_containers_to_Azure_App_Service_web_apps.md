@@ -29,7 +29,7 @@ After you complete this lab, you will be able to:
 
     ![Azure DevOps](images/m1-2.png)
 
-5. In the **Organization Setting** window on the left menu click on **Billing** and select **Setup Billing** then click on save.
+5. In the **Organization Settings** window on the left menu click on **Billing** and select **Setup Billing** then click on save, you can find the **Organization Settings** in the left bottom corner of the Azure DevOps home page.
 
     ![Azure DevOps](images/agent3.png)
     ![Azure DevOps](images/agent4.png)    
@@ -166,7 +166,7 @@ In this task, you will use the Azure DevOps project you generated in the previou
     | **Push services** | pushes the **myhealth.web** image tagged with **$(Build.BuildId)** to container registry |
     | **Publish Artifact** | allows for sharing dacpac for database deployment through Azure DevOps artifacts |
 
-1.  On the **MHCDocker.build** pipeline pane, ensure that the **Pipeline** entry is selected and, in the **Agent Specifications** drop-down list, select **ubuntu-18.04**.
+1.  On the **MHCDocker.build** pipeline pane, ensure that the **Azure Pipelines** entry is selected and, in the **Agent Specifications** drop-down list, select **ubuntu-20.04**.
 1.  On the **MHCDocker.build** pipeline pane, in the list of tasks of the pipeline, click the **Run services** task, on the **Docker Compose** pane on the right side, in the **Azure subscription** dropdown list, select the entry representing the Azure subscription you are using in this lab, and click **Authorize** to create the corresponding service connection. When prompted, sign in using the account with the Owner role in the Azure subscription and the Global Administrator role in the Azure AD tenant associated with the Azure subscription.
 
     >**Note**: This step creates an Azure service connection, which defines and secures a connection to the target Azure subscription, using Service Principal Authentication (SPA). 
@@ -194,7 +194,7 @@ In this task, you will use the Azure DevOps project you generated in the previou
     >**Note**: Next you will need to configure the agent pool information required for deployment.
 
 1.  Select the **DB deployment** job, on the **Agent job** pane on the right side, in the **Agent pool** dropdown list, select **Azure Pipelines** and, next, in the **Agent Specification** dropdown list, select **windows-2019**.
-1.  Select the **Web App deployment** job, on the **Agent job** pane on the right side, in the **Agent pool** dropdown list, select **Azure Pipelines** and, next, in the **Agent Specification** dropdown list, select **ubuntu-18.04**.
+1.  Select the **Web App deployment** job, on the **Agent job** pane on the right side, in the **Agent pool** dropdown list, select **Azure Pipelines** and, next, in the **Agent Specification** dropdown list, select **ubuntu-20.04**.
 1.  At the top of the pane, click the **Variables** header.
 1.  In the list of pipeline variables, set the values of the following variables:
 

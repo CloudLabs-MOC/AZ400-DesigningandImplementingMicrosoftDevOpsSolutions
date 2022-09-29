@@ -101,7 +101,7 @@ In this task, you will install and configure Azure Boards app in the newly creat
 1.  Click **Add**, again go to **Apps**, in the **Search all apps** textbox, type **Azure Boards** and, in the list of apps, click **Azure Boards**.
 1.  Click the down facing arrowhead directly to the right of the **Open** button and, in the dropdown list, click the **Add to a team** entry.
 
-       ![add to a team button](images/image112.png) 
+    ![add to a team button](images/image112.png) 
        
 3.  On the **Set up Azure boards for a team** panel, in the **Search** text box, type **Tailwind Traders**, in the list of results, select the **Tailwind Traders > General** entry, and click **Set up a bot**.
 4.  In the list of posts in the **General** channel of the **Tailwind Traders** team, Press enter to the post titled **Azure Boards** in the conversation box, review messages posted by the bot:
@@ -117,7 +117,7 @@ In this task, you will install and configure Azure Boards app in the newly creat
     feedback - Report a problem or suggest a feature
     To know more see documentation.
     ```
-1.  Open **New conversation** and type **@** and as you type Azure, click on **Azure Boards** icon in the chat menu it will popup **Azure boards** window, then click on sign in. Sign with the credentials provided in environmental details page. click **Accept** to accept the permission requests for accessing your Azure DevOps subscription.
+1.  Open a New conversation and type @ and as you type Azure, you will be prompted with results, select Azure Boards followed by signin. Sign with the credentials provided in environmental details page. click **Accept** to accept the permission requests for accessing your Azure DevOps subscription.
 1.  Copy the url of your Azure DevOps Tailwind Traders project. Example: https://dev.azure.com/myorg/myproject . Open New conversation in the Teams channel and type @ and as you type Azure, you will be prompted with results, select Azure Boards followed by link in the command panel. At this point, paste your project url that you had copied. Your post should look like, ´Azure Boards link https://dev.azure.com/myorg/myproject ´. Press Enter.
 
     ```
@@ -136,7 +136,7 @@ In this task, you will add Azure Boards Kanban boards to tabs in Microsoft Teams
 
 1.  On your lab VM, switch to the web browser displaying the **Tailwind Traders** project in the Azure DevOps portal, in the vertical menu bar at the far left of the Azure DevOps portal, click **Boards**, and, in the **Boards** section, click **Boards**.
         
-       ![click on boards](images/image113.png)
+    ![click on boards](images/image113.png)
        
 3.  On the **Boards** pane, in the **My team boards (1)** section, click **Tailwind Traders Team boards** entry. 
 4.  While on the **Tailwind Traders Team** pane, in the web browser window, copy its URL into Clipboard.

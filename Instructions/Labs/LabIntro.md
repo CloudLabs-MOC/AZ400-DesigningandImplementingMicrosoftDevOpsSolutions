@@ -6,8 +6,6 @@
 
 1. To get the lab environment details, you can select the **Lab Environment** tab, you can locate the **Lab Environment** tab on the upper right corner. Additionally, the credentials will also be emailed to your email address provided during registration.
 
- > You will see Suffix/DeploymentID value on the **Lab Environment** tab, please use it wherever you see SUFFIX or DeploymentID in lab steps. This is a unique number associated with each lab deployment. 
-
 ### Task 1: Log in to Azure Portal
 
 1. In the JumpVM, double click on the Azure portal shortcut on the desktop.

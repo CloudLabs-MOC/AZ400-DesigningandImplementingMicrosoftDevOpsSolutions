@@ -161,7 +161,7 @@ In this task, you will create and publish a NuGet package.
     
 1. Now, switch back to Azure DevOps portal, click on the **user setting** gear from upper right corner of portal and then click on personal access token. 
     
-1. On Personal Access Token page click on `+ New Token`. On **Create a new personal access toekn** popup window, provide name as **odluser-<inject key="DeploymentID" enableCopy="false" />**, leave other ooptions default and then select **Create**. 
+1. On Personal Access Token page click on `+ New Token`. On **Create a new personal access toekn** popup window, provide name as **odluser-<inject key="DeploymentID" enableCopy="false" />**, and under scope select **Full access**, leave other options default and then select **Create**. 
     
 1. On next page, copy the personal access token with copy button icon and save in a notepad to use in next step. 
 
