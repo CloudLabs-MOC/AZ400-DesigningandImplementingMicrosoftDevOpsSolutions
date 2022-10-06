@@ -18,17 +18,17 @@ After you complete this lab, you will be able to:
 
 1. If you already have a GitHub account that you can use for this lab proceed with Exercise 1, else follow the instructions to create an account.
 
-1. Navigate to the https://github.com/ Click on Signup.
+2. Navigate to the https://github.com/ Click on Signup.
    
-1. Provide the email address and click on continue.
+3. Provide the email address and click on continue.
 
  ![Github](images/mod6_22.png)
  
-1. Provide the password and enter the valid username and click on continue.
+4. Provide the password and enter the valid username and click on continue.
 
   ![Github](images/mod6_26.png)
 
-1. Provide the confirmation and verify your account and click on create account. This would take 2 minutes to create.
+5. Provide the confirmation and verify your account and click on create account. This would take 2 minutes to create.
 
  ![Github](images/mod6_25.png)
 
