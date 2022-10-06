@@ -76,8 +76,6 @@ In this task, you will use Azure Cloud Shell to create Azure resources required 
 
     >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and select **Create storage**. 
 
-1.  From the **Bash** session in the Cloud Shell pane, run the following to create variables representing the Azure region where you will deploy resources in this lab, the resource group containing these resources, as well as the names of these resources, including an Azure Container Registry instance, an Azure App Service plan name, an Azure web app name, an Azure SQL Database logical server name, and an Azure SQL database name:
-
 1.  From the Bash session in the Cloud Shell pane, run the following to create the resource group that will host Azure resources you deploy in this lab (replace the `<Azure_region>` placeholder with the name of the Azure region, such as 'eastus', where you intend to deploy these resources):
 
     ```bash
