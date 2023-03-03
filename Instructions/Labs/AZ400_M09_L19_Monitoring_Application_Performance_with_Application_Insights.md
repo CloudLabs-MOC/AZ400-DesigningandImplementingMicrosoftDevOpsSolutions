@@ -257,7 +257,8 @@ web site.
 29.  Verify that the **Parts Unlimited** web site loads as expected. 
 
      ![Azure DevOps](images/mod17_img8.png)
-
+   
+> **Note**: **Congratulations!** You have successfully completed this task. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
 
 #### Task 2: Generate and review application traffic
 
@@ -281,6 +282,8 @@ In this task, you will generate traffic targeting the App Service web app you de
 
 6.  On the **Application Insights** configuration blade, click the **View Application Insights data** link.
 7.  Review the resulting **Application Insights** blade displaying charts presenting different characteristics of the collected data, including the traffic you generated and failed requests you triggered earlier in this task.
+
+    > **Note**: **Congratulations!** You have successfully completed this task. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
 
 #### Task 3: Investigate application performance
 
@@ -354,6 +357,8 @@ In this task, you will use Application Insights to investigate performance of th
 21.  At the top of the newly displayed chart, click **Apply splitting** and, in the resulting filter, in the **Select values** dropdown list, select **Operation name**. 
 
       > **Note**: This will split the server requests based on pages they reference, represented by different colors in the chart.
+      
+      > **Note**: **Congratulations!** You have successfully completed this task. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
 
 #### Task 4: Track application usage
 
