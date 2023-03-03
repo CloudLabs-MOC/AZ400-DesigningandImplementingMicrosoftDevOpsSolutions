@@ -94,6 +94,8 @@ In this task, you will publish a branch of an Azure DevOps repo as wiki.
 
 1.  Review the content of  **GitHubActions** file and note the overall structure of the wiki, matching the structure of the underlying repo.
 
+    > **Note**: **Congratulations!** You have successfully completed this task. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+
 #### Task 2: Manage content of a published wiki
 
 In this task, you will manage content of the wiki you published in the previous task.
