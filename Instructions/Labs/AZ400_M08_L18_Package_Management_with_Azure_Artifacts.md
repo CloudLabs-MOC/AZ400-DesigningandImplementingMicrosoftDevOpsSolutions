@@ -254,6 +254,8 @@ In this task, you will update a NuGet package.
 1.  When prompted, in the **Preview Changes** dialog box, click **OK**.
 1.  Press the **F5** key to build and run the site. Verify that it works as expected.
 
+    > **Note**: **Congratulations!** You have successfully completed this task. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+
 #### Review
 
 In this lab, you learned how to work with Azure Artifacts by using the following steps:
