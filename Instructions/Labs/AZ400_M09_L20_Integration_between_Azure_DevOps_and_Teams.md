@@ -194,6 +194,8 @@ In this task, you will subscribe to the Azure Pipeline notifications in Microsof
 1. With the **Posts** tab selected, in the **General** channel of the **Tailwind Traders** team, type **@** and as you type **Azure**, you will be prompted with results, select **Azure Pipelines** followed by **subscribe** in the command Panel. At this point, paste the release URL that you had copied. Your post should look like, `@Azure Pipelines subscribe https://dev.azure.com/<organization_name>/Tailwind%20Traders/_release?_a=releases&view=mine&definitionId=2` to subscribe to the release pipeline (make sure to replace the `<organization_name>` placeholder with the name of your DevOps organization). Press **Enter**.
 
     >**Note**: For Release pipelines, the channel is subscribed to the **Deployment started**, **Deployment completed** and **Deployment approval pending notifications**.
+    
+    > **Note**: **Congratulations!** You have successfully completed this task. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
 
 #### Task 3: Using filters to customize subscriptions to Azure Pipelines in Microsoft Teams
 
