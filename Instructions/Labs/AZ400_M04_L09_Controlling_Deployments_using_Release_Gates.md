@@ -173,6 +173,8 @@ In this task, you will create two Azure web apps representing the **Canary** and
 
 1. Confirm the creation of the Alert rule by clicking **Review+Create**, and confirm once more by clicking **Create**. Wait for the alert rule to get created successfully.
 
+    > **Note**: **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+
 ### Exercise 1: Configure the build pipeline
 
 In this exercise, you will prepare the release artifact (web deploy zip package) for the .NET 6 eShopOnWeb web application source code.
@@ -287,6 +289,8 @@ In this task, you will enable the post-deployment gate for the Canary Environmen
 
 1. Close the **Post-deployment conditions** pane, by clicking the **x** mark in its upper right corner.
 1. Back on the **New Release Pipeline** pane, click **Save**, and in the **Save** dialog box, click **OK**.
+
+     > **Note**: **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
 
 ### Exercise 4: Test release gates
 
