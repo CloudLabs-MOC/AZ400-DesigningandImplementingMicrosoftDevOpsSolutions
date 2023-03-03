@@ -200,6 +200,8 @@ In this task, you will remove pipeline billing to eliminate unnecessary charges.
 1. Under **Organization Settings** select **Billing** and click on **Change billing** button to open Change billing pane.
 
 1. In the **Change billing** pane, select **Remove billing** setting and click on Save.
+    
+     > **Note**: **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
 
 #### Review
 
