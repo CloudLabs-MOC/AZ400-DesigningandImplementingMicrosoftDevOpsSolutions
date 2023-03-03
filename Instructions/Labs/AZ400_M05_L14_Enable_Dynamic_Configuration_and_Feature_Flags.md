@@ -258,6 +258,8 @@ In this task, you will use Azure Cloud Shell to remove the Azure resources provi
 
     >**Note**: The command executes asynchronously (as determined by the --nowait parameter), so while you will be able to run another Azure CLI command immediately afterwards within the same Bash session, it will take a few minutes before the resource groups are actually removed.
 
+    > **Note**: **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+
 ## Review
 
 In this lab, you learned how to dynamically enable configuration and manage feature flags.
