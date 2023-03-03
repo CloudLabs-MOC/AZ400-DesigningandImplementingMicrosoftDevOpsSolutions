@@ -119,6 +119,8 @@ In this task, you will create an Azure web app by using the Azure portal.
     > **Note**: Record the name of the web app. You will need it later in this lab.
 
 1. Close the Azure Cloud Shell, but leave the Azure Portal open in the browser.
+    
+    > **Note**: **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
 
 ### Exercise 1: Configure CI/CD Pipelines as Code with YAML in Azure DevOps
 
@@ -326,6 +328,8 @@ stages:
 1. Switch back to web browser window displaying the Azure portal and navigate to the blade displaying the properties of the Azure web app.
 1. On the Azure web app blade, click **Overview** and, on the overview blade, click **Browse** to open your site in a new web browser tab.
 1. Verify that the deployed site loads as expected in the new browser tab, showing the EShopOnWeb E-commerce website.
+
+     > **Note**: **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
 
 ### Exercise 2: Configure Environment settings for CI/CD Pipelines as Code with YAML in Azure DevOps
 
