@@ -237,7 +237,7 @@ In this task, we will trigger the **Build** to compile Selenium C# scripts along
      .\run --diagnostics
      .\run.cmd
    ```
-
+   > **Note**: **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
 ## Review
 
 In this lab, you learned how to execute Selenium test cases on a C# web application, as part of the Azure DevOps Release pipeline.
