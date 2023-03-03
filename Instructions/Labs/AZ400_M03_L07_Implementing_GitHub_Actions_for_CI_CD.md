@@ -172,6 +172,9 @@ In this task, you will use GitHub environments to ask for manual approval before
     ![approval](images/gh-approve.png)
 
 1. Workflow will follow the **deploy** job execution and finish.
+
+    > **Note**: **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+    
 ## Review
 
 In this lab, you implemented a GitHub Action workflow that deploys an Azure web app by using DevOps Starter.
