@@ -431,6 +431,8 @@ In this task, you will modify the main template to account for remaining depende
     - If you have multiple Azure subscriptions ensure you have set the subscription context to the correct one where the resource group is deployed.
     - Ensure that the linked template is accessible via the URI you specified.
 
+> **Note**: **Congratulations!** You have successfully completed this task. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+
 > **Note**: As a next step, you could now modularize the remaining resource definitions in the main deployment template, such as the network and virtual machine resource definitions. 
 
 > **Note**: If you are not planning on using the deployed resources, you should delete them to avoid associated charges. You can do so simply by deleting the resource group **az400m13l01-RG**.
