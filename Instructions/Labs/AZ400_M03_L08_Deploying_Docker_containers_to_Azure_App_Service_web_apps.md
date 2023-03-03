@@ -247,6 +247,8 @@ In this task, you will remove pipeline billing to eliminate unnecessary charges.
 
 1. In the **Change billing** pane, select **Remove billing** setting and click on Save.
 
+     > **Note**: **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+
 ## Review
 
 In this lab, you used an Azure DevOps CI/CD pipeline to build a custom Docker image, pushed it to Azure Container Registry, and deployed it as a container to Azure App Service by using Azure DevOps.
