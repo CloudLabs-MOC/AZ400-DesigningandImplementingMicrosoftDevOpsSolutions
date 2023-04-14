@@ -30,7 +30,7 @@ After you complete this lab, you will be able to:
 
 In this exercise, you will set up the prerequisites for the lab, which consist of a new Azure DevOps project with a repository based on the [eShopOnWeb](https://github.com/MicrosoftLearning/eShopOnWeb).
 
-### Exercise 1: (skip if done) Import and run CI/CD Pipelines
+### Exercise 1: Import and run CI/CD Pipelines
 
 In this exercise, you will import and run the CI pipeline, configure the service connection with your Azure Subscription and then import and run the CD pipeline.
 
