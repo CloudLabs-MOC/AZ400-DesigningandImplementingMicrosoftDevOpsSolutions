@@ -204,7 +204,7 @@ In this task, you will add continuous delivery to the YAML-based definition of t
 1. Specify the following parameters for this task:
 - Download Artifacts produced by: **Current Build**
 - Download Type: **Specific Artifact**
-- Artifact Name: **select "Website" from the list**
+- Artifact Name: **Enter "Website" in the text box**
 - Destination Directory: **$(Build.ArtifactStagingDirectory)**
 1. Click **Add**.
 1. The snippet of added code should look similar to below:
@@ -421,12 +421,6 @@ the resulting YAML snippet should look like this now, reflecting the **Deploy St
 1. This allows the Deploy Stage to kick off and successfully deploying the Azure Web App source code.
 
     > **Note:** While this example only used the approvals, know the other checks such as Azure Monitor, REST API, etc... can be used in a similar way
-
-### Exercise 3: Remove the Azure lab resources
-
-In this exercise, you will remove the Azure resources provisioned in this lab to eliminate unexpected charges.
-
->**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 ## Review
 
