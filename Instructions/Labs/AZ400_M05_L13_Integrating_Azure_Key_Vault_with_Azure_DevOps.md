@@ -70,7 +70,7 @@ Setup CI YAML pipeline for:
 - Creating an Azure Container Registry to keep the container images
 - Using Docker Compose to build and push **eshoppublicapi** and **eshopwebmvc** container images. Only **eshopwebmvc** container will be deployed.
 
-#### Task 1: (skip if done) Create a Service Principal
+#### Task 1:  Create a Service Principal
 
 In this task, you will create a Service Principal by using the Azure CLI, which will allow Azure DevOps to:
 - Deploy resources on your Azure subscription
@@ -136,7 +136,7 @@ In this task, you will import an existing CI YAML pipeline definition, modify an
 
     ![Select Pipeline](images/select-ci-container-compose.png)
 
-1. In the YAML pipeline definition, customize your Resource Group name by replacing **NAME** in **AZ400-EWebShop-NAME** with the **Deployment ID** which can be found in the environment details page and replace **YOUR-SUBSCRIPTION-ID** with the your own Azure subscriptionId.
+1. In the YAML pipeline definition, customize your Resource Group name by replacing **NAME** in **AZ400-EWebShop-<inject key="DeploymentID" enableCopy="false"/>** and replace **YOUR-SUBSCRIPTION-ID** with the your own Azure subscriptionId.
 
 1. Click on **Save and Run** and wait for the pipeline to execute successfully.
 
@@ -170,9 +170,9 @@ For this lab scenario, we will have a Azure Container Instance (ACI) that pull a
 
     | Setting | Value |
     | --- | --- |
-    | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of a new resource group **AZ400-EWebShop-NAME** |
-    | Key vault name | any unique valid name, like **ewebshop-kv-NAME** (replace NAME with the **Deployment ID** which can be found in the environment details page) |
+    | Subscription | Retain the existing Subscription |
+    | Resource group | the name of a new resource group **AZ400-EWebShop-<inject key="DeploymentID" enableCopy="false"/>** |
+    | Key vault name | any unique valid name, like **ewebshop-kv-<inject key="DeploymentID" enableCopy="false"/>**. |
     | Region | an Azure region close to the location of your lab environment |
     | Pricing tier | **Standard** |
     | Days to retain deleted vaults | **7** |
@@ -237,9 +237,9 @@ In this task, you will import a CD pipeline, customize it and run it for deployi
 1. In the YAML pipeline definition, customize:
 
     - **YOUR-SUBSCRIPTION-ID** with your Azure subscription id.
-    - **az400eshop-NAME** replace NAME to make it globally unique.
+    - **az400eshop-NAME** replace NAME with <inject key="DeploymentID" enableCopy="false"/>.
     - **YOUR-ACR.azurecr.io** and **ACR-USERNAME** with your ACR login server (both need the ACR name, can be reviewed on the ACR>Access Keys).
-    - **AZ400-EWebShop-NAME** with the resource group name defined before in the lab.
+    - **AZ400-EWebShop-NAME** with the resource group name defined before in the lab.(replace NAME with <inject key="DeploymentID" enableCopy="false"/>)
 
 1. Click on **Save and Run** and wait for the pipeline to execute successfully.
 
@@ -250,20 +250,6 @@ In this task, you will import a CD pipeline, customize it and run it for deployi
 
 1. Your pipeline will take a name based on the project name. Lets **rename** it for identifying the pipeline better. Go to **Pipelines>Pipelines** and click on the recently created pipeline. Click on the ellipsis and **Rename/Remove** option. Name it **eshoponweb-cd-aci** and click on **Save**.
 
-
-### Exercise 2: Remove the Azure DevOps billing
-
-In this exercise, you will remove the Azure DevOps billing enabled in this lab to eliminate unexpected charges.
-
-#### Task 1: Remove the Azure DevOps billing
-
-In this task, you will remove pipeline billing to eliminate unnecessary charges.
-
-1. On the lab computer, switch to the browser window displaying Azure DevOps organization homepage and select **Organization Settings** at bottom left corner.
-
-1. Under **Organization Settings** select **Billing** and click on **Change billing** button to open Change billing pane.
-
-1. In the **Change billing** pane, select **Remove billing** setting and click on Save.
 
 #### Review
 
