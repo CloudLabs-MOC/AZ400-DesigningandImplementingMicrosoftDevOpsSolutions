@@ -52,7 +52,7 @@ After you complete this lab, you will be able to:
 
 In this exercise, you will set up the prerequisites for the lab, which consist of a new Azure DevOps project with a repository based on the [eShopOnWeb](https://dev.azure.com/unhueteb/_git/eshopweb-az400).
 
-#### Task 1:  (skip if done) Create and configure the team project
+#### Task 1: Create and configure the team project
 
 In this task, you will create an **eShopOnWeb_MultiStageYAML** Azure DevOps project to be used by several labs.
 
@@ -202,6 +202,10 @@ In this task, you will add continuous delivery to the YAML-based definition of t
 1. Place the cursor on the first line under the **steps** node of the **deploy** stage, and hit Enter/Return to add a new empty line (Line 64).
 1. On the **Tasks** pane, search for and select the **Download build artifacts** task.
 1. Specify the following parameters for this task:
+    - Download Artifacts produced by: **Current Build**
+    - Download Type: **Specific Artifact**
+    - Artifact Name: **Enter "Website" in the text box**
+    - Destination Directory: **$(Build.ArtifactStagingDirectory)**
 1. Click **Add**.
 1. The snippet of added code should look similar to below:
 
