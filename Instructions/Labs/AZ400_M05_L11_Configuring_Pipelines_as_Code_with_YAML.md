@@ -60,7 +60,7 @@ In this task, you will create an **eShopOnWeb_MultiStageYAML** Azure DevOps proj
 
     ![Create Project](images/400-2.png)
 
-#### Task 2:  (skip if done) Import eShopOnWeb Git Repository
+#### Task 2: Import eShopOnWeb Git Repository
 
 In this task you will import the eShopOnWeb Git repository that will be used by several labs.
 
