@@ -21,30 +21,30 @@ After you complete this lab, you will be able to:
 
 #### Set up an Azure DevOps organization. 
 
-1. On your lab VM open **Edge Browser** on desktop and navigate to https://go.microsoft.com/fwlink/?LinkId=307137. 
+1. On your lab VM open **Edge Browser** on desktop and navigate to [**Azure Devops**](https://go.microsoft.com/fwlink/?LinkId=307137)
 
 2. In the pop-up for *Help us protect your account*, select **Skip for now (14 days until this is required)**.
 
 3. On the next page accept defaults and click on continue.
 
-    ![Azure DevOps](images/400-3.png)
+    ![Azure DevOps](images/400-3-1.png)
 
 4. On the **Almost Done...** page fill the captcha and click on continue. 
 
-    ![Azure DevOps](images/m1-2.png)
+    ![Azure DevOps](images/m1-2-1.png)
 
 5. On the Azure Devops page click on **Azure DevOps** located at top left corner and then click on **Organization Setting** at the left down corner
 
-    ![Azure DevOps](images/agent1.png)
+    ![Azure DevOps](images/agent1-1.png)
 
 6. In the **Organization Setting** window on the left menu click on **Billing** and select **Setup Billing** then click on save.
 
-    ![Azure DevOps](images/agent3.png)
-    ![Azure DevOps](images/agent4.png)    
+    ![Azure DevOps](images/agent3-1.png)
+    ![Azure DevOps](images/agent4-1.png)    
 
 7. On the **MS Hosted CI/CD** section under **Paid parallel jobs** enter value **1** and at the end of the page click on **Save**.
 
-    ![Azure DevOps](images/agent2.png)
+    ![Azure DevOps](images/agent2-1.png)
 
 ### Exercise 0: Configure the lab prerequisites
 
@@ -60,23 +60,23 @@ In this task, you will use Azure DevOps Demo Generator to generate a new project
 
 2.  Click **Sign in** and sign in using the Microsoft account associated with your Azure DevOps subscription.
 
-    ![Azure DevOps](images/mod17_img1.png)
+    ![Azure DevOps](images/mod17_img1-1.png)
     
 3.  If required, on the **Azure DevOps Demo Generator** page, click **Accept** to accept the permission requests for accessing your Azure DevOps subscription.
 
-    ![Azure DevOps](images/mod17_img2.png)
+    ![Azure DevOps](images/mod17_img2-1.png)
     
 4.  On the **Create New Project** page, in the **New Project Name** textbox, type **Monitoring Application Performance**, in the **Select organization** dropdown list, select your Azure DevOps organization, and then click **Choose template**.
 5.  In the list of templates, select the **PartsUnlimited** template and click **Select Template**.
 6.  Back on the **Create New Project** page, click **Create Project**
 
-    ![Azure DevOps](images/mod17_img3.png)
+    ![Azure DevOps](images/mod17_img3-1.png)
 
     > **Note**: Wait for the process to complete. This should take about 2 minutes. In case the process fails, navigate to your DevOps organization, delete the project, and try again.
 
 7.  On the **Create New Project** page, click **Navigate to project**.
 
-    ![Azure DevOps](images/mod17_img4.png)
+    ![Azure DevOps](images/mod17_img4-1.png)
 
 #### Task 2: Create Azure resources
 
@@ -87,15 +87,15 @@ In this task, you will create an Azure web app and an Azure SQL database by usin
 1.  From the lab computer, start a web browser, navigate to the [**Azure Portal**](https://portal.azure.com), and sign in with the user account that has the Owner role in the Azure subscription you will be using in this lab and has the role of the Global Administrator in the Azure AD tenant associated with this subscription.
 2. In the Azure portal, in the toolbar, click the **Cloud Shell** icon located directly to the right of the search text box.
 
-   ![Azure DevOps](images/mod17_img5.png)
+   ![Azure DevOps](images/mod17_img5-1.png)
 
 3. If prompted to select either **Bash** or **PowerShell**, select **Bash**.
 
-   ![Azure DevOps](images/mod17_img6.png)
+   ![Azure DevOps](images/mod17_img6-1.png)
 
     >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and select **Create storage**.
 
-   ![Azure DevOps](images/mod17_img7.png)
+   ![Azure DevOps](images/mod17_img7-1.png)
 
 4.  From the **Bash** prompt, in the **Cloud Shell** pane, run the following command to create a resource group (replace the `<region>` placeholder with the name of the Azure region closest to you such as 'eastus').
 
@@ -196,7 +196,7 @@ In this task, you will deploying a web app to Azure by using Azure DevOps pipeli
 4. Back on the **All pipelines > PartsUnlimitedE2E** pane, click the rectangle representing the **QA** stage, on the **QA** pane, click **Delete**, and, in the **Delete stage** dialog box, click **Confirm**.
 6. Back on the **All pipelines > PartsUnlimitedE2E** pane, in the rectangle representing the **Production** stage, click the **1 job, 1 task** link.
 7. On the pane displaying the list of tasks of the **Production*** stage, click the entry representing the **Azure App Service Deploy** task.
-8. On the **Azure App Service deploy** pane, in the **Azure subscription** dropdown list, select the entry representing the Azure subscription you are using in this lab, and click **Authorize** to create the corresponding service connection. When prompted, sign in using the account with the Owner role in the Azure subscription and the Global Administrator role in the Azure AD tenant associated with the Azure subscription.
+8. On the **Azure App Service deploy** pane, in the **Azure subscription** dropdown list, select the entry representing the Azure subscription you are using in this lab, and click **Authorize** to create the corresponding service connection, and in the **Azure service name** dropdown list select your app service name. When prompted, sign in using the account with the Owner role in the Azure subscription and the Global Administrator role in the Azure AD tenant associated with the Azure subscription.
 9. With the **Tasks** tab of the **All pipelines > PartsUnlimitedE2E** pane active, click the **Pipeline** tab header to return to the diagram of the pipeline. 
 10. In the diagram, click the **Pre-deployment condition** oval symbol on the left side of the rectangle representing the **Production** stage.
 11. On the **Pre-deployment condition** pane, in the **Select trigger** section, select **After release**.
@@ -249,15 +249,21 @@ In this task, you will deploying a web app to Azure by using Azure DevOps pipeli
 25.  Switch back to the web browser window displaying the Azure DevOps portal, in the vertical navigational pane, select the **Pipelines**, and, in the **Pipelines** section, click the entry representing your most recently run build pipeline.
 26.  If the build has not yet completed, track it through until it does, then, in the vertical navigational pane, in the **Pipelines** section, click **Releases**, on the **PartsUnlimiteE2E** pane, click **Release-1** and follow the release pipeline to its completion.
 27.  Switch to the web browser window displaying the Azure portal and, on the **App Service web app** blade, in the vertical menu bar on the left side, click **Overview**. 
-28.  On the right side, in the **Essentials** section, click the **URL** link. This will automatically open another web browser tab displaying the **Parts Unlimited** 
+28.  On the right side, in the **Essentials** section, click the **Default domain** link. This will automatically open another web browser tab displaying the **Parts Unlimited** 
 web site.
 
 > **Note**: Please wait until the the requested URL is visible, it may take around 10 minutes to load the respective webpage.
 
 29.  Verify that the **Parts Unlimited** web site loads as expected. 
 
-     ![Azure DevOps](images/mod17_img8.png)
+     ![Azure DevOps](images/mod17_img8-1.png)
 
+30. **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+   - Click the **(...) icon** located at the upper right corner of the lab guide section and navigate to the **Lab Validation** Page.
+   - Hit the **Validate** button for the corresponding task.
+   - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
 
 #### Task 2: Generate and review application traffic
 
@@ -266,11 +272,11 @@ In this task, you will generate traffic targeting the App Service web app you de
 1.  In the web browser window displaying the **Parts Unlimited** web site, navigate through its pages to generate some traffic.
 2.  On the **Parts Unlimited** web site, click the **Brakes** menu item.
 
-    ![Azure DevOps](images/mod17_img9.png)
+    ![Azure DevOps](images/mod17_img9-1.png)
 
 4.  In the URL textbox at the top of the browser window, append **1** to the end of the URL string and press **Enter**, effectively setting the **CategoryId** parameter to **11**. 
 
-    ![Azure DevOps](images/mod17_img10.png)
+    ![Azure DevOps](images/mod17_img10-1.png)
 
     > **Note**: This will trigger a server error since that category does not exist. Refresh the page a few times to generate more errors.
 
@@ -281,6 +287,13 @@ In this task, you will generate traffic targeting the App Service web app you de
 
 6.  On the **Application Insights** configuration blade, click the **View Application Insights data** link.
 7.  Review the resulting **Application Insights** blade displaying charts presenting different characteristics of the collected data, including the traffic you generated and failed requests you triggered earlier in this task.
+
+8. **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+   - Click the **(...) icon** located at the upper right corner of the lab guide section and navigate to the **Lab Validation** Page.
+   - Hit the **Validate** button for the corresponding task.
+   - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
 
 #### Task 3: Investigate application performance
 
@@ -393,7 +406,7 @@ In this task, you will use Application Insights to investigate performance of th
 
 11. On the **Workbooks** blade, in the vertical menu on the left side, in the **Monitoring** section, select **User Retention Analysis** under Usage.
 
-    ![Azure DevOps](images/mod17_img12.1.png)
+    ![Azure DevOps](images/mod17_img12.1-(1).png)
 
     > **Note**: The retention feature in Application Insights helps you analyze how many users return to your app, and how often they perform particular tasks or achieve goals. For example, if you run a game site, you could compare the numbers of users who return to the site after losing a game with the number who return after winning. This knowledge can help you improve both your user experience and your business strategy.
 
@@ -402,7 +415,7 @@ In this task, you will use Application Insights to investigate performance of th
 12.  Now click on **Retention Analysis Workbook**, review the **Overall Retention** chart, and close the blade.
 13.  On the **Workbooks** blade, in the vertical menu on the left side, in the **Monitoring** section, select **User Impact Analysis** under Usage.
 
-     ![Azure DevOps](images/mod17_img11.png)
+     ![Azure DevOps](images/mod17_img11-1.png)
 
      > **Note**: Impact analyzes how web site properties, such as load times, influence conversion rates for various parts of your app. To put it more precisely, it discovers how any dimension of a page view, custom event, or request affects page views or custom events.
 
@@ -414,17 +427,16 @@ In this task, you will use Application Insights to investigate performance of th
     > **Note**: A cohort is a set of users, sessions, events, or operations that have something in common. In Application Insights, cohorts are defined by an analytics query. In cases where you have to analyze a specific set of users or events repeatedly, cohorts can give you more flexibility to express exactly the set you're interested in. Cohorts are used in ways similar to filters, but cohort definitions are built from custom analytics queries, so they're much more adaptable and complex. Unlike filters, you can save cohorts so other members of your team can reuse them.
 
 
-
 #### Task 5: Configure web app alerts
 
 1. While on the **More \| Gallery** blade, in the vertical menu on the left side, in the **Monitoring** section, click **Alerts**. 
 
     > **Note**: Alerts enable you to set triggers that perform actions when Application Insights measurements reach specified conditions.
 
-2. On the **Alerts** blade, in the toolbar, click **+ New alert rule**.
+2. On the **Alerts** blade, in the toolbar, click **+ Create** in dropdown select **Alert rule**.
 3. On the **Create alert rule** blade, note that, in the **Scope** section, the current Application Insights resource will be selected by default. 
-4. On the **Create alert rule** blade, in the **Condition** section, click **Select condition**.
-5. On the **Configure signal logic** blade, search for and select the **Failed requests** metric.
+4. On the **Create alert rule** blade, in the **Condition** section, in select a signal dropdown click on **See all signals**.
+5. On the **Select a signal** blade, search for and select the **Failed requests** metric.
 6. On the **Configure signal logic** blade, scroll down to the **Alert logic** section, ensure that **Threshold** is set to **Static** and set the **Threshold value** to **1**. 
 
     > **Note**: This will trigger the alert once a second failed request is reported. By default, the conditions will be evaluated every minute and based on the aggregation of measurements over the past 5 minutes. 
@@ -455,6 +467,13 @@ In this task, you will use Application Insights to investigate performance of th
     > **Note**: This will trigger a server error since that category does not exist. Refresh the page a few times to generate more errors.
 
 18.  After about five minutes, check your email account to verify that you have received an email indicating that the alert you defined was triggered.
+
+19. **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+   - Click the **(...) icon** located at the upper right corner of the lab guide section and navigate to the **Lab Validation** Page.
+   - Hit the **Validate** button for the corresponding task.
+   - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
 
 ### Exercise 2: Remove the Azure lab resources
 

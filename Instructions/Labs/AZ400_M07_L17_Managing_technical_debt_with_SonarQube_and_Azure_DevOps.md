@@ -181,8 +181,6 @@ In this task, you will install and configure the SonarCloud Azure DevOps extensi
 
     > **Note**: You have now created the SonarCloud organization that mirrors your Azure DevOps organization.
 
-    > **Note**: Next, within the newly created organization, you will create a SonarCloud project that will mirror the Azure DevOps project **SonarExamples**.
-
 1. On the **Analyze projects - Select repositories** page, in the list of Azure DevOps projects, select the checkbox next to the **eshoponweb / eshoponweb ** entry and click **Set up**.
 
 

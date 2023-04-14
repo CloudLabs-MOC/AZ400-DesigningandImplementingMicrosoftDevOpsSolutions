@@ -86,7 +86,7 @@ In this task, you will provision an Azure VM running Windows Server 2016 along w
 
 1.  Click **Review + create** and then click **Create**. 
 
-    > **Note**: Wait for the process to complete. This should take about 15 minutes. 
+    > **Note**: Wait for the process to complete. This should take about 30 minutes. 
 
 ### Exercise 1: Implement Selenium tests by using a self-hosted Azure DevOps agent
 

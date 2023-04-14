@@ -183,15 +183,15 @@ In this task, you will add continuous delivery to the YAML-based definition of t
 
 1. The snippet of code added to the editor should look similar to below, reflecting your name for the azureSubscription and WebappName parameters:
 
-```yaml
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        ConnectionType: 'AzureRM'
-        azureSubscription: 'AZURE SUBSCRIPTION HERE (b999999abc-1234-987a-a1e0-27fb2ea7f9f4)'
-        appType: 'webApp'
-        WebAppName: 'eshoponWebYAML369825031'
-        packageForLinux: '$(Build.ArtifactStagingDirectory)/**/Web.zip'
-```
+    ```yaml
+        - task: AzureRmWebAppDeployment@4
+          inputs:
+            ConnectionType: 'AzureRM'
+            azureSubscription: 'AZURE SUBSCRIPTION HERE (b999999abc-1234-987a-a1e0-27fb2ea7f9f4)'
+            appType: 'webApp'
+            WebAppName: 'eshoponWebYAML369825031'
+            packageForLinux: '$(Build.ArtifactStagingDirectory)/**/Web.zip'
+    ```
 
 1. Validate the task is listed as a child of the **steps** task. If not, select all lines from the added task, press the **Tab** key twice to indent it four spaces, so that it listed as a child of the **steps** task.
 
@@ -202,21 +202,17 @@ In this task, you will add continuous delivery to the YAML-based definition of t
 1. Place the cursor on the first line under the **steps** node of the **deploy** stage, and hit Enter/Return to add a new empty line (Line 64).
 1. On the **Tasks** pane, search for and select the **Download build artifacts** task.
 1. Specify the following parameters for this task:
-- Download Artifacts produced by: **Current Build**
-- Download Type: **Specific Artifact**
-- Artifact Name: **Enter "Website" in the text box**
-- Destination Directory: **$(Build.ArtifactStagingDirectory)**
 1. Click **Add**.
 1. The snippet of added code should look similar to below:
 
-```yaml
-    - task: DownloadBuildArtifacts@0
-      inputs:
-        buildType: 'current'
-        downloadType: 'single'
-        artifactName: 'Website'
-        downloadPath: '$(Build.ArtifactStagingDirectory)'
-```
+    ```yaml
+        - task: DownloadBuildArtifacts@0
+          inputs:
+            buildType: 'current'
+            downloadType: 'single'
+            artifactName: 'Website'
+            downloadPath: '$(Build.ArtifactStagingDirectory)'
+    ```
 1. If the YAML indentation is off, With the added task still selected in the editor, press the **Tab** key twice to indent it four spaces.
 
     > **Note**: Here as well you may also want to add an empty line before and after to make it easier to read.
@@ -231,9 +227,9 @@ In this task, you will add continuous delivery to the YAML-based definition of t
 1. Notice the 2 different Stages, **Build .Net Core Solution** and **Deploy to Azure Web App** appearing.
 1. Wait for the pipeline to kick off and wait until it completes the Build Stage successfully.
 1. Once the Deploy Stage wants to start, you are prompted with **Permissions Needed**, as well as an orange bar saying 
-```
-This pipeline needs permission to access a resource before this run can continue to Deploy to an Azure Web App
-```
+    ```
+    This pipeline needs permission to access a resource before this run can continue to Deploy to an Azure Web App
+    ```
 1. Click on **View**
 1. From the **Waiting for Review** pane, click **Permit**.
 1. Validate the message in the **Permit popup** window, and confirm by clicking **Permit**.
@@ -241,85 +237,85 @@ This pipeline needs permission to access a resource before this run can continue
 
      > **Note**: If the deployment should fail, because of an issue with the YAML Pipeline syntax, use this as a reference:
 
- ```yaml
-#NAME THE PIPELINE SAME AS FILE (WITHOUT ".yml")
-# trigger:
-# - main
+     ```yaml
+    #NAME THE PIPELINE SAME AS FILE (WITHOUT ".yml")
+    # trigger:
+    # - main
 
-resources:
-  repositories:
-    - repository: self
-      trigger: none
+    resources:
+      repositories:
+        - repository: self
+          trigger: none
 
-stages:
-- stage: Build
-  displayName: Build .Net Core Solution
-  jobs:
-  - job: Build
-    pool:
-      vmImage: ubuntu-latest
-    steps:
-    - task: DotNetCoreCLI@2
-      displayName: Restore
-      inputs:
-        command: 'restore'
-        projects: '**/*.sln'
-        feedsToUse: 'select'
+    stages:
+    - stage: Build
+      displayName: Build .Net Core Solution
+      jobs:
+      - job: Build
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+        - task: DotNetCoreCLI@2
+          displayName: Restore
+          inputs:
+            command: 'restore'
+            projects: '**/*.sln'
+            feedsToUse: 'select'
 
-    - task: DotNetCoreCLI@2
-      displayName: Build
-      inputs:
-        command: 'build'
-        projects: '**/*.sln'
-    
-    - task: DotNetCoreCLI@2
-      displayName: Test
-      inputs:
-        command: 'test'
-        projects: 'tests/UnitTests/*.csproj'
-    
-    - task: DotNetCoreCLI@2
-      displayName: Publish
-      inputs:
-        command: 'publish'
-        publishWebProjects: true
-        arguments: '-o $(Build.ArtifactStagingDirectory)'
-    
-    - task: PublishBuildArtifacts@1
-      displayName: Publish Artifacts ADO - Website
-      inputs:
-        pathToPublish: '$(Build.ArtifactStagingDirectory)'
-        artifactName: Website
-    
-    - task: PublishBuildArtifacts@1
-      displayName: Publish Artifacts ADO - Bicep
-      inputs:
-        PathtoPublish: '$(Build.SourcesDirectory)/.azure/bicep/webapp.bicep'
-        ArtifactName: 'Bicep'
-        publishLocation: 'Container'
+        - task: DotNetCoreCLI@2
+          displayName: Build
+          inputs:
+            command: 'build'
+            projects: '**/*.sln'
 
-- stage: Deploy
-  displayName: Deploy to an Azure Web App
-  jobs:
-  - job: Deploy
-    pool:
-      vmImage: 'windows-2019'
-    steps:
-    - task: DownloadBuildArtifacts@0
-      inputs:
-        buildType: 'current'
-        downloadType: 'single'
-        artifactName: 'Website'
-        downloadPath: '$(Build.ArtifactStagingDirectory)'
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        ConnectionType: 'AzureRM'
-        azureSubscription: 'AZURE SUBSCRIPTION HERE (b999999abc-1234-987a-a1e0-27fb2ea7f9f4)'
-        appType: 'webApp'
-        WebAppName: 'eshoponWebYAML369825031'
-        packageForLinux: '$(Build.ArtifactStagingDirectory)/**/Web.zip'
+        - task: DotNetCoreCLI@2
+          displayName: Test
+          inputs:
+            command: 'test'
+            projects: 'tests/UnitTests/*.csproj'
 
-```
+        - task: DotNetCoreCLI@2
+          displayName: Publish
+          inputs:
+            command: 'publish'
+            publishWebProjects: true
+            arguments: '-o $(Build.ArtifactStagingDirectory)'
+
+        - task: PublishBuildArtifacts@1
+          displayName: Publish Artifacts ADO - Website
+          inputs:
+            pathToPublish: '$(Build.ArtifactStagingDirectory)'
+            artifactName: Website
+
+        - task: PublishBuildArtifacts@1
+          displayName: Publish Artifacts ADO - Bicep
+          inputs:
+            PathtoPublish: '$(Build.SourcesDirectory)/.azure/bicep/webapp.bicep'
+            ArtifactName: 'Bicep'
+            publishLocation: 'Container'
+
+    - stage: Deploy
+      displayName: Deploy to an Azure Web App
+      jobs:
+      - job: Deploy
+        pool:
+          vmImage: 'windows-2019'
+        steps:
+        - task: DownloadBuildArtifacts@0
+          inputs:
+            buildType: 'current'
+            downloadType: 'single'
+            artifactName: 'Website'
+            downloadPath: '$(Build.ArtifactStagingDirectory)'
+        - task: AzureRmWebAppDeployment@4
+          inputs:
+            ConnectionType: 'AzureRM'
+            azureSubscription: 'AZURE SUBSCRIPTION HERE (b999999abc-1234-987a-a1e0-27fb2ea7f9f4)'
+            appType: 'webApp'
+            WebAppName: 'eshoponWebYAML369825031'
+            packageForLinux: '$(Build.ArtifactStagingDirectory)/**/Web.zip'
+
+    ```
 
 #### Task 4: Review the deployed site
 
@@ -354,19 +350,19 @@ YAML Pipelines as Code don't have Release/Quality Gates as we have with Azure De
 1. Navigate to the start of the **Deploy job** (-job: Deploy on Line 60)
 1. Add a new empty line right below, and add the following snippet:
 
-```yaml
-  environment: approvals
-```
+    ```yaml
+      environment: approvals
+    ```
 
-the resulting snippet of code should look like this:
+    The resulting snippet of code should look like this:
 
-```yaml
- jobs:
-  - job: Deploy
-    environment: approvals
-    pool:
-      vmImage: 'windows-2019'
-```
+    ```yaml
+     jobs:
+      - job: Deploy
+        environment: approvals
+        pool:
+          vmImage: 'windows-2019'
+    ```
 1. As the environment is a specific setting of a deployment stage, it cannot be used by "jobs". Therefore, we have to make some additional changes to the current job definition.
 1. On Line **60**, rename "- job: Deploy" to **- deployment: Deploy**
 1. Next, under Line **63** (vmImage: Windows-2019), add a new empty line.
@@ -416,8 +412,8 @@ the resulting YAML snippet should look like this now, reflecting the **Deploy St
 1. Next, since we have the *environment:approvals* configured for the Deploy Stage, it will ask for an approval confirmation before it kicks off.
 1. This is visible from the Pipeline view, where it says **Waiting (0/1 checks passed)**. A notification message is also displayed saying **approval needs review before this run can continue to Deploy to an Azure Web App**.
 1. Click the **View** button next to this message.
-1. From the appearing pane **Checks and manual validations for Deploy to Azure Web App**, click the **Approval Waiting** message.
-1. Click **Approve**.
+1. From the appearing pane **Checks and manual validations for Deploy to Azure Web App**, click the **Permit** button.
+1. Click **Permit** again in the following pop-up.
 1. This allows the Deploy Stage to kick off and successfully deploying the Azure Web App source code.
 
     > **Note:** While this example only used the approvals, know the other checks such as Azure Monitor, REST API, etc... can be used in a similar way

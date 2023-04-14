@@ -65,7 +65,7 @@ In this task, you will configure Visual Studio to prepare for the lab.
 1.  If prompted whether to proceed, click **Open**. 
 1.  If prompted, sign in with the user account you used to set up your Azure DevOps organization. Username and password can be obtained from the environmental details page.
 1.  Within the Visual Studio interface, in the **Azure DevOps** pop-up window, accept the default local path and click **Clone**. This will automatically import the project into Visual Studio. Make a note of local path you will need it in further tasks.
-1.  After import is completed in lab VM go to start menu search for **Visual Studio Installer** and open it. Click on modify and under workloads verify if **ASP<nolink>.NET and web development**, **Azure development**, and **.NET cross-platform development** already selected else select them and click on modify.
+1.  After import is completed in lab VM go to start menu search for **Visual Studio Installer** and open it. Click on **Modify** within the **Visual Studio Community 2022** card and under workloads verify if **ASP<nolink>.NET and web development**, **Azure development**, and **.NET Multi-platform App UI development** already selected else select them and click on modify.
 1.  Installation will take some time meanwhile minimise visualstudio and continue next task. After installation is completed it will restart Visual studio automatically.
 
     > **Note**: If you get before we get started window click on continue.
@@ -121,13 +121,13 @@ In this task, you will create and publish a NuGet package.
     | Location | accept the default value |
     | Solution | **Create new solution** |
     | Solution name | **PartsUnlimited.Shared** |
-    | Framework | **.NET Framework 4.5.1** |
+    | Framework | **.NET Framework 4.7.2** |
 
     > **Note**: Make sure not to select **.NET Standard**.
 
 1.  Within the Visual Studio interface, in the **Solution Explorer** pane, right-click **Class1.cs**, in the right-click menu, select **Delete**, and, when prompted for confirmation, click **OK**.
 1.  Within the Visual Studio interface, in the **Solution Explorer** pane, right-click the **PartsUnlimited.Shared** project node and select **Properties**.
-1.  Within the **PartsUnlimited.Shared** properties pane, verify that the **Target framework** is set to **.NET Framework 4.5.1**.
+1.  Within the **PartsUnlimited.Shared** properties pane, verify that the **Target framework** is set to **.NET Framework 4.7.2**.
 1.  Press **Ctrl+Shift+B** to build the project. 
 
     > **Note**: In the next task we'll use **NuGet.exe** to generate a NuGet package directly from the built project, but it requires the project to be built first.
@@ -158,7 +158,7 @@ In this task, you will create and publish a NuGet package.
     
 1. Now, switch back to Azure DevOps portal, click on the **user setting** gear from upper right corner of portal and then click on personal access token. 
     
-1. On Personal Access Token page click on `+ New Token`. On **Create a new personal access toekn** popup window, provide name as **odluser-<inject key="DeploymentID" enableCopy="false" />**, and under scope select **Full access**, leave other options default and then select **Create**. 
+1. On Personal Access Token page click on `+ New Token`. On **Create a new personal access token** popup window, provide name as **odluser-<inject key="DeploymentID" enableCopy="false" />**, and under scope select **Full access**, leave other options default and then select **Create**. 
     
 1. On next page, copy the personal access token with copy button icon and save in a notepad to use in next step. 
 
