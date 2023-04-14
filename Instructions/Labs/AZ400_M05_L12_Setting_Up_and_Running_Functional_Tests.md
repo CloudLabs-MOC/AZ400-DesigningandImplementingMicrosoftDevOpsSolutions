@@ -41,11 +41,6 @@ Identify the applications that you'll use in this lab:
 
     ![Azure DevOps](images/m1-2.png)
 
-#### Prepare an Azure subscription
-
--   Identify an existing Azure subscription or create a new one.
--   Verify that you have a Microsoft account or an Azure AD account with the Owner role in the Azure subscription and the Global Administrator role in the Azure AD tenant associated with the Azure subscription. For details, refer to [List Azure role assignments using the Azure portal](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-portal) and [View and assign administrator roles in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/roles/manage-roles-portal#view-my-roles).
-
 ### Exercise 0: Configure the lab prerequisites
 
 In this exercise, you will set up the prerequisites for the lab, which include the preconfigured Parts Unlimited team project based on an Azure DevOps Demo Generator template and Azure resources. 
@@ -60,7 +55,7 @@ In this task, you will use Azure DevOps Demo Generator to generate a new project
 
 1.  Click **Sign in** and sign in using the Microsoft account associated with your Azure DevOps subscription.
 1.  If required, on the **Azure DevOps Demo Generator** page, click **Accept** to accept the permission requests for accessing your Azure DevOps subscription.
-1.  On the **Create New Project** page, in the **New Project Name** textbox, type **Setting**, in the **Select organization** dropdown list, select your Azure DevOps organization, and then click **Choose template**.
+1.  On the **Create New Project** page, in the **New Project Name** textbox, type **Setting Up and Running Functional Tests**, in the **Select organization** dropdown list, select your Azure DevOps organization, and then click **Choose template**.
 1.  In the list of templates, in the toolbar, click **DevOps Labs**, select the **Selenium** template and click **Select Template**.
 1.  Back on the **Create New Project** page, click **Create Project**
 
@@ -147,8 +142,10 @@ In this task, you will configure a self-hosted agent by using the VM you deploye
 
     | Setting | Value |
     | --- | --- |
-    | Name | **Setting** |
-    | Scopes | Click radio button for **Full access** |
+    | Name | **Setting Up and Running Functional Tests lab** |
+    | Scopes | **Custom Defined** |
+    | Scopes | Click **Show all scopes** (at the bottom of the window) |
+    | Scopes | **Agent Pools** - **Read & Manage** |
 
 1.  On the **Success** pane, copy the value of the personal access token to Clipboard.
 
