@@ -70,7 +70,7 @@ In this task, you will configure Visual Studio to prepare for the lab.
 
     > **Note**: If you get before we get started window click on continue.
 
-### Exercise 1: Working with Azure Artifacts
+ ### Exercise 1: Working with Azure Artifacts
 
 In this exercise, you will learn how to work with Azure Artifacts by using the following steps:
 
@@ -254,12 +254,11 @@ In this task, you will update a NuGet package.
 1.  When prompted, in the **Preview Changes** dialog box, click **OK**.
 1.  Press the **F5** key to build and run the site. Verify that it works as expected.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    >
-    >   - Click the **(...) icon** located at the upper right corner of the lab guide section and navigate to the **Lab Validation** Page.
-    >   - Hit the **Validate** button for the corresponding task.
-    >   - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    >   - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 #### Review
 
