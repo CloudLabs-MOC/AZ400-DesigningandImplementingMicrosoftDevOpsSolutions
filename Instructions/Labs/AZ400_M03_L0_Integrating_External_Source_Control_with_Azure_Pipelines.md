@@ -1,4 +1,4 @@
-# Lab 06: Integrating External Source Control with Azure Pipelines
+# Lab 0: Integrating External Source Control with Azure Pipelines
 # Student lab manual
 
 ## Lab overview
