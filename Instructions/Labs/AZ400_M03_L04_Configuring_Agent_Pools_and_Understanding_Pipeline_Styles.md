@@ -1,4 +1,4 @@
-# Lab 04: Configuring Agent Pools and Understanding Pipeline Styles
+# Lab 03: Configuring Agent Pools and Understanding Pipeline Styles
 # Student lab manual
 
 ## Lab overview
