@@ -107,9 +107,11 @@ A Service Principal is automatically created by Azure Pipelines, when you connec
 
     > **Note**: The command will generate a JSON output. Copy the output to text file. You will need it later in this lab.
 
+
 1. Next, from the lab computer, start a web browser, navigate to the Azure DevOps **eShopOnWeb** project. Click on **Project Settings>Service Connections (under Pipelines)** and **Create Service Connection**.
 
     ![New Service Connection](images/new-service-connection.png)
+
 
 1. On the **New service connection** blade, select **Azure Resource Manager** and **Next** (may need to scroll down).
 
@@ -196,6 +198,7 @@ For this lab scenario, we will have a Azure Container Instance (ACI) that pull a
     | Upload options | **Manual** |
     | Name | **acr-secret** |
     | Value | ACR access password copied in previous task |
+
 
 
 #### Task 4: Create a Variable Group connected to Azure Key Vault
