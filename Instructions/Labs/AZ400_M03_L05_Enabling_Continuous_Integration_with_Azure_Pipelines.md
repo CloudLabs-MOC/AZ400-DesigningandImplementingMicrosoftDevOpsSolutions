@@ -1,4 +1,4 @@
-# Lab 05: Enabling Continuous Integration with Azure Pipelines
+# Lab 04: Enabling Continuous Integration with Azure Pipelines
 # Student lab manual
 
 ## Lab overview
