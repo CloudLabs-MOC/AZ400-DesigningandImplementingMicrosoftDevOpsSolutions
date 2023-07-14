@@ -76,6 +76,7 @@ In this task, you will configure Visual Studio to prepare for the lab.
          
 1.  Within the Visual Studio interface, in the **Azure DevOps** pop-up window, accept the default local path and click **Clone**. This will automatically import the project into Visual Studio. Make a note of local path you will need it in further tasks.
 
+
 1.  Sign in with below credentials:
    
      * Email/Username: <inject key="AzureAdUserEmail"></inject>
@@ -83,7 +84,8 @@ In this task, you will configure Visual Studio to prepare for the lab.
      * Password: <inject key="AzureAdUserPassword"></inject>
 
      >**Note**: If you encounter blank sign-in page, kindly close the window and when prompted again, sign-in by selecting your username.
-        ![Azure DevOps](images/az-400-1) 
+     
+     ![](images/az-400-1.png) 
     
 1.  After import is completed in lab VM go to start menu search for **Visual Studio Installer** and open it. Click on **Modify** within the **Visual Studio Community 2022** card and under workloads verify if **ASP<nolink>.NET and web development**, **Azure development**, and **.NET Multi-platform App UI development** already selected else select them and click on modify.
 1.  Installation will take some time meanwhile minimise visualstudio and continue next task. After installation is completed it will restart Visual studio automatically.
