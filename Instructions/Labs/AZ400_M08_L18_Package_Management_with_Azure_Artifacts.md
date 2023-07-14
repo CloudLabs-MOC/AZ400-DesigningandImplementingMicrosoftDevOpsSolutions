@@ -42,7 +42,7 @@ In this task, you will use Azure DevOps Demo Generator to generate a new project
 
     > **Note**: For more information on the site, see https://docs.microsoft.com/en-us/azure/devops/demo-gen.
 
-1.  Click **Sign in** and if prompted sign-in with below credentials.
+1.  Click **Sign-in** and if prompted sign-in with below credentials.
    
      * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -68,7 +68,7 @@ In this task, you will configure Visual Studio to prepare for the lab.
 1.  In the vertical menu on the left side of the **Package Management with Azure Artifacts** pane, click **Repos**.
 1.  On the **Files** pane, click **Clone**, select the drop-down arrow next to **Clone in VS Code**, and, in the dropdown menu, select **Visual Studio**.
 1.  If prompted whether to proceed, click **Open**. 
-1.  Sign in with the user account you used to set up your Azure DevOps organization.
+1.  **Sign-in** with the user account you used to set up your Azure DevOps organization.
 
      * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -76,8 +76,7 @@ In this task, you will configure Visual Studio to prepare for the lab.
          
 1.  Within the Visual Studio interface, in the **Azure DevOps** pop-up window, accept the default local path and click **Clone**. This will automatically import the project into Visual Studio. Make a note of local path you will need it in further tasks.
 
-
-1.  Sign in with below credentials:
+1.  **Sign-in** with below credentials:
    
      * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -85,7 +84,7 @@ In this task, you will configure Visual Studio to prepare for the lab.
 
      >**Note**: If you encounter blank sign-in page, kindly close the window and when prompted again, sign-in by selecting your username.
      
-     ![](images/az-400-1.png) 
+     ![](images/az-400-(1).png) 
     
 1.  After import is completed in lab VM go to start menu search for **Visual Studio Installer** and open it. Click on **Modify** within the **Visual Studio Community 2022** card and under workloads verify if **ASP<nolink>.NET and web development**, **Azure development**, and **.NET Multi-platform App UI development** already selected else select them and click on modify.
 1.  Installation will take some time meanwhile minimise visualstudio and continue next task. After installation is completed it will restart Visual studio automatically.
