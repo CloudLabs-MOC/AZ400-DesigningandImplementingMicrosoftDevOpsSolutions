@@ -331,8 +331,7 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 1. From the **Stage** window appearing, update the default "Stage 1" Stage Name to **Canary**. Close the popup window by using the **X** button. You are now in the graphical editor of the Release Pipeline, showing the Canary Stage.
 
     ![Azure devops](images/canary.png)
-   
-1. On the top of the page, rename the current pipeline from **New release pipeline** to **New Release Pipeline**.
+  
    
 1. Hover the mouse over the Canary Stage, and click the **Clone** button, to copy the Canary Stage to an additional Stage. Name this Stage **Production**.
 
