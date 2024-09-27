@@ -332,6 +332,8 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
     ![Azure devops](images/canary.png)
    
+1. On the top of the page, rename the current pipeline from **New release pipeline** to **New Release Pipeline**.
+   
 1. Hover the mouse over the Canary Stage, and click the **Clone** button, to copy the Canary Stage to an additional Stage. Name this Stage **Production**.
 
     ![Azure devops](images/clone.png)
@@ -356,7 +358,7 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
      ![Azure devops](images/contin1.png)  
    
-1. Within the **Canary Environments** stage, click the **1 job, 2 tasks** label and review the tasks within this stage.
+1. Within the **Canary Environments** stage, click the **1 job, 1 task** label and review the tasks within this stage.
      
       ![Azure devops](images/1job1task.png)
 
@@ -375,6 +377,8 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
     > notice an exclamation mark next to the Tasks tab. This is expected, as we need to configure the settings for the Production Stage.
     
       ![Azure devops](images/canaryre.png)
+   
+1. Open the **Application and Configuration Settings** pane and enter `-UseOnlyInMemoryDatabase true -ASPNETCORE_ENVIRONMENT Development` in the **App settings** box.
 
 1. Under **All pipelines > New Release Pipeline** pane, Click on **Tasks**,From the drop-down selct Select **Production**.
 
@@ -387,6 +391,8 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 1. Select the Task **Deploy Azure App Service**. In the **Package or Folder** field, update the default value of "$(System.DefaultWorkingDirectory)/\*\*/\*.zip" to **"$(System.DefaultWorkingDirectory)/\*\*/Web.zip"**
 
      ![Azure devops](images/prodre.png)
+
+1. Open the **Application and Configuration Settings** pane and enter `-UseOnlyInMemoryDatabase true -ASPNETCORE_ENVIRONMENT Development` in the **App settings** box.
 
 1. On the **All pipelines > New Release Pipeline** pane, click **Save** and, in the **Save** dialog box, click **OK**.
 
@@ -471,7 +477,7 @@ In this task, you will configure pre-deployment gates.
      ![Azure devops](images/createnewre.png)
 1. Notice the green confirmation message, saying "Release-2" has been created. Click the link of "Release-2" to navigate to its details.
 
-1. Notice the **Canary** Stage is in a **Pending Approval** state. Click the **Approve** button. This sets off the Canary Stage again.
+1. Notice the **Canary** Stage is in a **Pending Approval** state. Click the **Approve** button and click **Approve** button Again . This sets off the Canary Stage again.
 
      ![Azure devops](images/approve.png) 
 
