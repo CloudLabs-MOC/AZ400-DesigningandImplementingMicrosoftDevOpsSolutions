@@ -168,7 +168,7 @@ In this task, you will manage content of the wiki you published in the previous 
 
 1. In the vertical menu on the left side, click **Repos (1)**, ensure that the dropdown menu in the upper section of the **Files (2)** pane displays the **EShopOnWeb-<inject key="DeploymentID"> </inject> (3)** repo and **main (4)** branch, in the repo folder hierarchy, select the **Documents (5)** folder, and select the **Welcome-to-our-Online-Retail-Store!.md (6)** file.
 
-    ![](images/AZ400_M09_L17_17.png)
+    ![](images/L2T2S1.png)
 
 2. Notice how the MarkDown format is visible here as raw text format, allowing you to continue editing the file content from here as well.
 
@@ -185,9 +185,9 @@ In this exercise, you will step through creating and managing a project wiki.
 
 In this task, you will create a project wiki and add to it a Mermaid diagram and an image.
 
-1.  On your lab VM, in the Azure DevOps portal displaying the **Overview (1)** and **Wiki (2)** pane of the **EShopOnweb-<inject key="DeploymentID"> </inject>** project, with the content of the **EShopOnWeb (Documents) (3)** wiki selected, at the top of the pane, click the **EShopOnWeb-<inject key="DeploymentID"> </inject> (Documents)** dropdown list header, and, in the drop down list, select **Create new project wiki (4)**. 
+1.  On your lab VM, in the Azure DevOps portal displaying the **Overview (1)** and **Wiki (2)** pane of the **EShopOnweb-<inject key="DeploymentID"> </inject>** project, with the content of the **EShopOnWeb-<inject key="DeploymentID"> </inject> (Documents) (3)** wiki selected, at the top of the pane, click the **EShopOnWeb-<inject key="DeploymentID"> </inject> (Documents)** dropdown list header, and, in the drop down list, select **Create new project wiki (4)**. 
 
-     ![](images/AZ400_M09_L17_18.png)
+     ![](images/L2E2T1S1.png)
 
 2.  In the Page title text box, type **Project Design**.
 
@@ -298,9 +298,9 @@ In this task, you will manage the newly created project wiki.
 
 >**Note**: You will start by reverting the most recent change to the wiki page.
 
-1.  On you lab VM, in the Azure DevOps portal displaying the **Wiki pane** of the **EShopOnWeb** project, with the content of the **Project Design(1)** wiki selected, in the upper right corner, click the vertical **ellipsis symbol (2)** and, in the dropdown menu, click **View revisions (3)**.
+1.  On you lab VM, in the Azure DevOps portal displaying the **Wiki pane** of the **EShopOnWeb-<inject key="DeploymentID"> </inject>** project, with the content of the **Project Design(1)** wiki selected, in the upper right corner, click the vertical **ellipsis symbol (2)** and, in the dropdown menu, click **View revisions (3)**.
 
-     ![](images/AZ400_M09_L17_40.png)
+     ![](images/L2E2T2S1.png)
 
 2.  On the **Revisions** pane, click the entry representing the most recent change. 
 
@@ -308,7 +308,7 @@ In this task, you will manage the newly created project wiki.
      
 3.  On the resulting pane, review the comparison between the previous and the current version of the document, click **Revert**, when prompted for the confirmation, click **Revert** again, and then click **Browse Page**.
     
-     ![](images/AZ400_M09_L17_42.png)
+     ![](images/L2E2T2S3.png)
 
      ![](images/AZ400_M09_L17_43.png)
 
@@ -318,12 +318,12 @@ In this task, you will manage the newly created project wiki.
 
      >**Note**: Now you will add another page to the project wiki and set it as the wiki home page.
 
-     ![](images/AZ400_M09_L17_45.png)
+     ![](images/L2E2T2S4.png)
 
 
 5.  On the **Project Design** pane, at the bottom left corner, click **+ New page**.
 
-     ![](images/AZ400_M09_L17_46.png)
+     ![](images/L2E2T2S5.png)
 
 6.  On the page editor pane, in the **Page title** text box, type **Project Design Overview**, click **Save**, and then click **Close**.
 
@@ -331,13 +331,13 @@ In this task, you will manage the newly created project wiki.
 
 7.  Back in the pane listing the pages within the **Project Design** project wiki, locate the **Project Design Overview** entry, select it with the mouse pointer, drag and drop it above the **Project Design** page entry. 
 
-     ![](images/AZ400_M09_L17_48.png)
+     ![](images/L2E2T2S7.png)
     
      ![](images/AZ400_M09_L17_49.png)
 
 8.  Verify that the **Project Design Overview** entry is listed as the top level page with the home icon designating it as the wiki home page.
 
-    ![](images/AZ400_M09_L17_40.png)
+    ![](images/L2E2T2S8.png)
 
 ## Review
 
