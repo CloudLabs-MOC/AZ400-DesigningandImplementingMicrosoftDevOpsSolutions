@@ -27,7 +27,7 @@ After you complete this lab, you will be able to:
 
   ![Architecture Diagram](images/lab11-architecture-new.png)
       
-### Exercise 1: Import and run CI/CD Pipelines
+# Exercise 1: Import and run CI/CD Pipelines
 
 In this exercise, you will import and run the CI pipeline, configure the service connection with your Azure Subscription and then import and run the CD pipeline.
 
