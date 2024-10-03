@@ -18,8 +18,8 @@
 
 After you complete this lab, you will be able to:
 
-- Enable dynamic configuration
-- Manage feature flags
+- Exercise 1: Import and run CI/CD Pipelines
+- Exercise 2: Manage Azure App Configuration
 
 ## Estimated timing: 60 minutes
 
@@ -33,7 +33,7 @@ In this exercise, you will import and run the CI pipeline, configure the service
 
 In this task, you will create an eShopOnWeb Azure DevOps project to be used by several labs.
 
-#### Task 1: Import and run the CI pipeline
+## Task 1: Import and run the CI pipeline
 
 Let's start by importing the CI pipeline named **eshoponweb-ci.yml**.
 
@@ -65,7 +65,7 @@ Let's start by importing the CI pipeline named **eshoponweb-ci.yml**.
    
    ![](images/lab-11-1.png)
 
- **Task 2: Import and run the CD pipeline**
+ ## Task 2: Import and run the CD pipeline
  
  Let's import the CD pipeline named **eshoponweb-cd-webapp-code.yml*.
  
