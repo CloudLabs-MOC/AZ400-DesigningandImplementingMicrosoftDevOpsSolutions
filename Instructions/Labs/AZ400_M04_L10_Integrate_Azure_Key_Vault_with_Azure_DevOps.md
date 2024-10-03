@@ -62,7 +62,7 @@ In this task, you will create an **eShopOnWeb** Azure DevOps project to be used 
 
     ![Create Project](images/lab-400-1.png)
 
-## Task 3: Import eShopOnWeb Git Repository
+## Task 3:  Import eShopOnWeb Git Repository
 
 In this task you will import the eShopOnWeb Git repository that will be used by several labs.
 
