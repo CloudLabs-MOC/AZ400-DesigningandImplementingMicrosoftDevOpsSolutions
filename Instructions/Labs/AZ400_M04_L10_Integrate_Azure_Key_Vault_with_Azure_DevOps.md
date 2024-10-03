@@ -24,7 +24,11 @@ After you complete this lab, you will be able to:
 
    ![Architecture Diagram](images/lab10-architecture-new.png)
 
-## Set up an Azure DevOps organization
+# Exercise 0: Configure the lab prerequisites
+
+## Task 2: Set up an Azure DevOps organization
+
+In this exercise, you will set up the prerequisites for the lab, which consist of a new Azure DevOps project with a repository based on the [eShopOnWeb](https://github.com/MicrosoftLearning/eShopOnWeb).
 
 1. On your lab VM open **Edge Browser** on desktop and navigate to https://go.microsoft.com/fwlink/?LinkId=307137. 
 
@@ -50,11 +54,7 @@ After you complete this lab, you will be able to:
 
     ![Azure DevOps](images/billingsetup1.png)
 
-# Exercise 0: Configure the lab prerequisites
-
-In this exercise, you will set up the prerequisites for the lab, which consist of a new Azure DevOps project with a repository based on the [eShopOnWeb](https://github.com/MicrosoftLearning/eShopOnWeb).
-
-## Task 1: Create and configure the team project
+## Task 2: Create and configure the team project
 
 In this task, you will create an **eShopOnWeb** Azure DevOps project to be used by several labs.
 
@@ -62,7 +62,7 @@ In this task, you will create an **eShopOnWeb** Azure DevOps project to be used 
 
     ![Create Project](images/lab-400-1.png)
 
-## Task 2: Import eShopOnWeb Git Repository
+## Task 3: Import eShopOnWeb Git Repository
 
 In this task you will import the eShopOnWeb Git repository that will be used by several labs.
 
@@ -77,7 +77,7 @@ In this task you will import the eShopOnWeb Git repository that will be used by 
     - **.github** folder container YAML GitHub workflow definitions.
     - **src** folder contains the .NET 8 website used on the lab scenarios.
 
-#### Task 3: Set main branch as default branch
+#### Task 4: Set main branch as default branch
 
 1. Go to **Repos>Branches**.
 1. Hover on the **main** branch then click the ellipsis on the right of the column.
