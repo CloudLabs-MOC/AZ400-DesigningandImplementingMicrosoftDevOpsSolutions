@@ -6,18 +6,17 @@ Azure Key Vault provides secure storage and management of sensitive data, such a
 
 In this lab, you will see how you can integrate Azure Key Vault with an Azure DevOps pipeline by using the following steps:
 
-- create an Azure Key vault to store a MySQL server password as a secret.
-- create an Azure service principal to provide access to secrets in the Azure Key vault.
-- configure permissions to allow the service principal to read the secret.
-- configure pipeline to retrieve the password from the Azure Key vault and pass it on to subsequent tasks.
+- Create an Azure Key vault to store a MySQL server password as a secret.
+- Create an Azure service principal to provide access to secrets in the Azure Key vault.
+- Configure permissions to allow the service principal to read the secret.
+- Configure pipeline to retrieve the password from the Azure Key vault and pass it on to subsequent tasks.
 
 ## Objectives
 
 After you complete this lab, you will be able to:
 
-- Create a Microsoft Entra service principal.
--   Create an Azure key vault. 
--   Track pull requests through the Azure DevOps pipeline.
+- Exercise 0: Configure the lab prerequisites
+- Exercise 1: Setup CI pipeline to build eShopOnWeb container
 
 ## Estimated timing: 45 minutes
 
@@ -291,7 +290,7 @@ In this task, you will import a CD pipeline, customize it and run it for deployi
 
 In this lab, you integrated Azure Key Vault with an Azure DevOps pipeline by using the following steps:
 
-- created an Azure Key vault to store a MySQL server password as a secret.
-- created an Azure service principal to provide access to secrets in the Azure Key vault.
-- configured permissions to allow the service principal to read the secret.
-- configured pipeline to retrieve the password from the Azure Key vault and pass it on to subsequent tasks.
+- Created an Azure Key vault to store a MySQL server password as a secret.
+- Created an Azure service principal to provide access to secrets in the Azure Key vault.
+- Configured permissions to allow the service principal to read the secret.
+- Configured pipeline to retrieve the password from the Azure Key vault and pass it on to subsequent tasks.
