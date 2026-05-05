@@ -302,7 +302,7 @@ In this task, you will enable Continuous Integration by modifying the YAML build
      
       ![](images/l3-05-26.png)
      
-## Review
+## Summary
   
 In this lab, you learned how to define and manage build pipelines in Azure DevOps using YAML. You configured branch policies for build validation in pull requests, worked with feature branches, and set up a CI pipeline as code. The lab included importing YAML build definitions, enabling continuous integration, and testing the pipeline to automate and validate code changes efficiently.
 

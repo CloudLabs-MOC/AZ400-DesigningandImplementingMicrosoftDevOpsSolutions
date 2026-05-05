@@ -280,7 +280,7 @@ In this task, you will review the GitHub workflow execution.
 
    <validation step="bbf0a520-41e6-41d4-97ab-23cda9045900" />   
     
-## Review
+## Summary
 
 In this lab, you implemented a GitHub Action workflow that deploys a dynamic Azure web app by using Azure DevOps.
 

@@ -35,8 +35,6 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 
     ![Azure DevOps](images/dev32.png)
 
-1. If pop-up for *Action Required* is prompted, select **Ask later**. 
-
 1. On the next page, accept defaults, fill the captcha **(1)** and click on **Continue (2)**.
 
     ![Azure DevOps](images/dev33.png)
@@ -68,7 +66,6 @@ In this task, you will create an **eShopOnWeb** Azure DevOps project to be used 
     ![Azure DevOps](images/l2-05-1.png)
  
 1. Click on **New Project**. Give your project the name  **eShopOnWeb (1)**, verify **Private (2)** under **Visibility**, and then choose **+ Create project (3)**.
-
 
       ![](images/l2-05-2.png)
 
@@ -668,8 +665,7 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
     ![Azure DevOps](images/l2-05-45.png)
 
-
-## Review
+## Summary
 
 In this lab, you learned how to convert classic pipelines into YAML-based ones and how to implement and use self-hosted agents.
 

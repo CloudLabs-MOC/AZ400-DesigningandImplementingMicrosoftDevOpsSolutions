@@ -626,7 +626,7 @@ In this task, you will first generate some alerts for the Canary Web App, follow
 
     ![Azure devops](images/l4-05-70.png) 
     
-## Review
+## Summary
 
 In this lab, you configured release pipelines and then configured and tested release gates.
 
