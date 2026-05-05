@@ -32,7 +32,7 @@ In this task, you will activate the Mend Bolt extension in Azure DevOps by insta
 
     ![Azure DevOps](images/l4-05-72.png)
 
-1. Navigate to **Extensions (1)** under **General** and click on **Browse marketplace**.
+1. Navigate to **Extensions (1)** under **General** and click on **Browse marketplace (2)**.
 
     ![Azure DevOps](images/l4-05-73.png)
 
@@ -143,3 +143,5 @@ In this lab, you have accomplished the following:
 - Exercise 1: Implemented Security and Compliance in an Azure DevOps pipeline by using Mend Bolt 
 
 ### You have successfully completed the lab.
+
+By completing the Implementing DevOps with GitHub and Azure DevOps hands-on labs, you have gained practical experience in building end-to-end DevOps pipelines across GitHub and Azure DevOps. You learned how to implement CI/CD using GitHub Actions, configure Azure DevOps projects, and design YAML-based pipelines with both Microsoft-hosted and self-hosted agents. You also explored pull request workflows, branch policies, and continuous integration practices to enforce code quality and collaboration. Additionally, you implemented multi-stage release pipelines with deployment gates, monitored application health using Application Insights, and ensured secure and compliant delivery by integrating vulnerability scanning and cost management practices.

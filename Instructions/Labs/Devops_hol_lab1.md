@@ -59,7 +59,7 @@ In this task, you will create an empty public GitHub repository and import the e
 1. Click on **Sign in**. 
     ![Create Repository](images/dev231.png)
 
-1. Provide your **Github Username/email address** (1) and **Password (2)** then click on **Sign in (3)**.
+1. Provide your **Github Username/email address (1)** and **Password (2)** then click on **Sign in (3)**.
 
     ![Create Repository](images/l1-05-01.png)
 
@@ -290,3 +290,5 @@ In this lab, you have accomplished the following:
 - Exercise 2: Set up your GitHub Repository and Azure access
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next lab.
+
+![Launch Azure Portal](images/dev266.png)

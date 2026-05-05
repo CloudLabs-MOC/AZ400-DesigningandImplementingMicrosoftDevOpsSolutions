@@ -49,7 +49,9 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 
     ![Azure DevOps](images/dev35.png)
 
-1. On the **MS Hosted CI/CD** section under **Paid parallel jobs** enter value **1** and at the end of the page click on **Save**.
+    >**Note:** If billing is already configured, verify the subscription details are visible, and then proceed to the next step.
+
+1. On the **MS Hosted CI/CD** section under **Paid parallel jobs** enter value **1** **(1)** and at the end of the page click on **Save (2)**.
 
     ![Azure DevOps](images/az-400-lab3-3.png)
    
@@ -65,7 +67,8 @@ In this task, you will create an **eShopOnWeb** Azure DevOps project to be used 
 
     ![Azure DevOps](images/l2-05-1.png)
  
-1. Click on **New Project**. Give your project the name  **eShopOnWeb (1)**, select visibility as **Private (2)**,  and leave the other fields with defaults. Click on **+Create project (3)**.
+1. Click on **New Project**. Give your project the name  **eShopOnWeb (1)**, verify **Private (2)** under **Visibility**, and then choose **+ Create project (3)**.
+
 
       ![](images/l2-05-2.png)
 
@@ -570,7 +573,7 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
     ![Azure DevOps](images/lab2-05-02.png)
 
-1. In **Use NuGet (1)**, set the **Version of NuGet.exe to install (2)** to **6.x**.
+1. Select **Use NuGet (1)**, set the **Version of NuGet.exe to install (2)** to **6.x**.
 
     ![Azure DevOps](images/lab2-05-03.png)
 
@@ -590,7 +593,7 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
     ![Azure DevOps](images/lab2-05-07.png)
 
-1. In the **Save build pipeline** pane, select **Save (1)**.
+1. In the **Save build pipeline** pane, select **Save**.
 
     ![Azure DevOps](images/lab2-05-08.png)
 
@@ -679,5 +682,5 @@ In this exercise, you have accomplished the following:
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next lab.
 
-
+![Launch Azure Portal](images/dev266.png)
 
