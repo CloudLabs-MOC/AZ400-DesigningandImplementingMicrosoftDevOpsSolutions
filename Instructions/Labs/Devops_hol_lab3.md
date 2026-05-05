@@ -1,6 +1,6 @@
 # Lab 3:  Enabling Continuous Integration with Azure Pipelines  
 
-## Estimated timing: 40 minutes
+## Estimated timing: 40 Minutes
 
 ## Lab Scenario
 
@@ -18,11 +18,11 @@ In this lab, you will complete the following exercises:
 
   ![Architecture Diagram](images/lab4-architecture-new.png)
 
-## Exercise 1: Include build validation as part of a Pull Request 
+# Exercise 1: Include build validation as part of a Pull Request 
 
 In this exercise, you will configure branch policies on the main branch to enforce pull request validation and ensure code reviews before merging changes. You will then create and manage a pull request in Azure DevOps, merging changes from a new branch into the protected main branch.
 
-### Task 1: Branch Policies
+## Task 1: Branch Policies
 
 In this task, you will add policies to the main branch and only allow changes using Pull Requests that comply with the defined policies. You want to ensure that changes in a branch are reviewed before they are merged.
 
@@ -44,9 +44,9 @@ In this task, you will add policies to the main branch and only allow changes us
 
     ![](images/dev88.png)
       
-     >**Note**: If you get any error while saving the branch validation, refresh the page and try again.
+     >**Note:** If you get any error while saving the branch validation, refresh the page and try again.
 
-### Task 2: Working with Pull Requests
+## Task 2: Working with Pull Requests
  
 In this task, you will use the Azure DevOps portal to create a Pull Request, using a new branch to merge a change into the protected main branch.
  
@@ -113,7 +113,7 @@ In this task, you will use the Azure DevOps portal to create a Pull Request, usi
 
     ![](images/l3-05-10.png)
 
-     >**Note**: It might take around 2-3 minutes.
+     >**Note:** It might take around 2-3 minutes.
 
 1. Now from the **Complete (1)** dropdown you can click on **Complete (2)**. 
 
@@ -126,11 +126,11 @@ In this task, you will use the Azure DevOps portal to create a Pull Request, usi
    ![](images/l3-05-13.png)
 
 
-## Exercise 2: Configure CI Pipeline as Code with YAML
+# Exercise 2: Configure CI Pipeline as Code with YAML
 
 In this exercise, you will configure a CI pipeline as code using YAML. You will import the YAML build definition, enable Continuous Integration for automatic builds, and test the pipeline by creating a pull request to trigger the CI process when merging changes into the protected main branch.
 
-### Task 1: Import the YAML build definition
+## Task 1: Import the YAML build definition
 
 In this task, you will add the YAML build definition that will be used to implement Continuous Integration.
 
@@ -171,7 +171,7 @@ Let's start by importing the CI pipeline named **eshoponweb-ci.yml**.
     - **Publish Artifact - Bicep:** Publish the infrastructure artifact (Bicep file) and make it available as a pipeline artifact.
        
               
-### Task 2: Enable Continuous Integration
+## Task 2: Enable Continuous Integration
    
 The default build pipeline definition doesn't enable Continuous Integration.
 
@@ -191,9 +191,9 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 
      ![](images/dev110.png)
 
-      >**Note**: Be careful with copy/paste, make sure you have the same indentation shown above.
+      >**Note:** Be careful with copy/paste, make sure you have the same indentation shown above.
       
-      >**Note**: This will automatically trigger the build pipeline if any change is made to the main branch and the web application code (the src/web folder). Since you enabled Branch Policies, you need to pass a Pull Request to update your code. 
+      >**Note:** This will automatically trigger the build pipeline if any change is made to the main branch and the web application code (the src/web folder). Since you enabled Branch Policies, you need to pass a Pull Request to update your code. 
     
 1. Click the on the **Save and run (1)** dropdown and **Save (2)** button (not **Save and run**) to save the pipeline definition.
 
@@ -229,7 +229,7 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 
     ![](images/dev120.png)
   
-### Task 3: Test the CI pipeline
+## Task 3: Test the CI pipeline
  
  In this task, you will create a Pull Request, using a new branch to merge a change into the protected main branch and automatically trigger the CI pipeline. Navigate to the Repos section.
  
@@ -279,7 +279,7 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 
     ![](images/l3-05-23.png)
 
-     >**Note**: Please wait. The required checks might take 3-5 minutes to complete.     
+     >**Note:** Please wait. The required checks might take 3-5 minutes to complete.     
 
 1. On the **Complete Pull Request** tab, select only **Complete associated work items after merging (1)** checkbox  and Click on **Complete Merge (2)**.
 
@@ -297,12 +297,12 @@ In this task, you will enable Continuous Integration by modifying the YAML build
            
     ![](images/l3-05-25.png) 
      
-    - **Bicep**: the infrastructure artifact  
-    - **Website**: the app artifact
+    - **Bicep:** the infrastructure artifact  
+    - **Website:** the app artifact
      
       ![](images/l3-05-26.png)
      
-### Review
+## Review
   
 In this lab, you learned how to define and manage build pipelines in Azure DevOps using YAML. You configured branch policies for build validation in pull requests, worked with feature branches, and set up a CI pipeline as code. The lab included importing YAML build definitions, enabling continuous integration, and testing the pipeline to automate and validate code changes efficiently.
 

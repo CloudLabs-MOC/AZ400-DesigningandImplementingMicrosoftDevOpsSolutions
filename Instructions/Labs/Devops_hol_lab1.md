@@ -289,4 +289,4 @@ In this lab, you have accomplished the following:
 - Exercise 1: Imported eShopOnWeb to your GitHub Repository
 - Exercise 2: Set up your GitHub Repository and Azure access
 
-## You have successfully completed the lab. Click on **Next >>** to proceed with the next lab.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next lab.

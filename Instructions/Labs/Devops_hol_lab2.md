@@ -361,7 +361,7 @@ In this task, you will open and configure the ADOGenerator Selenium project in V
 
     ![Azure DevOps](images/dev277.png)
 
-    > **Note:** If a Sign in to Visual Studio window is open, click on **Skip and add accounts later** and Start Visual Studio.
+    > **Note:** If a Sign in to Visual Studio window is open, click on **Skip and add accounts later** and **Start Visual Studio**.
 
 1. On the Get started page, select **Open a project or solution**.
 
@@ -388,6 +388,10 @@ In this task, you will open and configure the ADOGenerator Selenium project in V
 1. If the projects are not loaded, In the **Solution explorer**, right click on the **ADOGenerator project (1)** and select **Reload project with dependencies (2)**. Do the same for **API** as well to make the project compatible.
 
     ![Azure DevOps](images/dev300.png)
+
+    >**Note:** If the **GitHub Copilot Chat** pane is open, select the **Close (X)** button to close it and view the projects.
+
+    ![Azure DevOps](images/lab2-05-01.png)
 
 1. Right-click on the **ADOGenerator project** in the Solution Explorer **(1)**. and select **Set as Startup Project (2)**.    
 
@@ -520,7 +524,7 @@ In this task, you will configure a self-hosted Azure DevOps agent on the Seleniu
     | Enter User account to use for the service (press enter for NT AUTHORITY\NETWORK SERVICE) | **Hit Enter** |
     | Enter whether to prevent service starting immediately after configuration is finished? (Y/N) (press enter for N) | **Hit Enter** |
 
-    ![Azure DevOps](images/dev314.png)    
+    ![Azure DevOps](images/l2-05-34.png)    
 
 1. Back on the **Agents (1)** tab of the **Default** pane, note that the newly configured agent is listed with the **Online (2)** status. Click on the **Azure DevOps (3)** label from the top left corner.
 
@@ -558,6 +562,42 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
     ![Azure DevOps](images/l2-05-37.png) 
 
+1. In the **Selenium** pipeline page, select **Edit** to modify the pipeline configuration.
+
+    ![Azure DevOps](images/l2-05-39n.png) 
+
+1. Select the **Pipeline (1)** settings pane, set the **Agent Specification (2)** to **windows-2022**.
+
+    ![Azure DevOps](images/lab2-05-02.png)
+
+1. In **Use NuGet (1)**, set the **Version of NuGet.exe to install (2)** to **6.x**.
+
+    ![Azure DevOps](images/lab2-05-03.png)
+
+1. In **Phase 1**, select **Add (+) (1)**, search for **Command line (2)**, select **Command line (3)**, and then choose **Add (4)**.
+
+    ![Azure DevOps](images/lab2-05-05.png)
+
+1. In **Phase 1**, drag **Command Line Script** above **Build solution** and select it.
+
+    ![Azure DevOps](images/lab2-05-06.png)
+
+1. In the **Command Line Script** task, enter the provided command in the **Script (1)** field, then select **Save & queue (2)** and choose **Save (3)**.
+
+    ```cmd
+    choco install netfx-4.5.1-devpack -y && choco install netfx-4.6.1-devpack -y
+    ```
+
+    ![Azure DevOps](images/lab2-05-07.png)
+
+1. In the **Save build pipeline** pane, select **Save (1)**.
+
+    ![Azure DevOps](images/lab2-05-08.png)
+
+1. Navigate to **Pipelines (1)** under Pipelines. Select **Selenium (2)** build pipeline.
+
+    ![Azure DevOps](images/l2-05-37.png)
+
 1. Click **Run pipeline**.    
 
     ![Azure DevOps](images/l2-05-38.png) 
@@ -577,6 +617,8 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 1. Once the build is successful, the release will be triggered. Navigate back to the **Releases (1)**  tab to see the deployment in progress. Click on the **Release-1 (2)**
 
     ![Azure DevOps](images/l2-05-41.png)
+
+    > **Note:** If any notification banner appears (such as release summary updates), close it by selecting the **X** icon.
 
 1. When the Selenium test execution phase starts, you can see the Selenium test execution jobs. Wait until the jobs are completed successfully.
 
@@ -604,6 +646,8 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
       ![Azure DevOps](images/dev332.png)           
 
     - Then navigate back to DevOps releases, click on **Redeploy** and then **Deploy**.
+
+      ![Azure DevOps](images/lab2-05-09.png)
 
 1. Wait for the Selenium test execution jobs completion. It might take around 10-15 minutes.       
 
@@ -633,7 +677,7 @@ In this exercise, you have accomplished the following:
 - Exercise 3: Managed Azure DevOps agent pools
 - Exercise 4: Implemented Selenium tests by using a self-hosted Azure DevOps agent
 
-## You have successfully completed the lab. Click on **Next >>** to proceed with the next lab.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next lab.
 
 
 

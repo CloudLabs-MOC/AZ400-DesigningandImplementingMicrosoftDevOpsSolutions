@@ -16,11 +16,11 @@ In this lab, you will complete the following exercises:
 
   ![Architecture Diagram](images/devarc5.png)
 
-## Exercise 1: Implement Security and Compliance in an Azure DevOps pipeline by using Mend Bolt 
+# Exercise 1: Implement Security and Compliance in an Azure DevOps pipeline by using Mend Bolt 
 
 In this exercise, you will implement security and compliance in an Azure DevOps pipeline using Mend Bolt. You will activate the Mend Bolt extension, create and trigger a build to scan for vulnerabilities in open source components, and remove Azure DevOps billing to avoid unnecessary charges.
 
-### Task 1: Activate the Mend Bolt extension 
+## Task 1: Activate the Mend Bolt extension 
 
 In this task, you will activate the Mend Bolt extension in Azure DevOps by installing it from the marketplace and setting up the free version for use in your pipeline.
 
@@ -57,7 +57,7 @@ In this task, you will activate the Mend Bolt extension in Azure DevOps by insta
     ![Azure DevOps](images/l4-05-79.png)
 
 
-### Task 2: Create and Trigger a build 
+## Task 2: Create and Trigger a build 
 
 In this task, you will create and trigger a build in Azure DevOps by editing an existing pipeline, adding the Mend Bolt extension to scan for vulnerabilities, and running the pipeline to analyze the open source components for security risks and vulnerabilities.
 
@@ -113,7 +113,7 @@ In this task, you will create and trigger a build in Azure DevOps by editing an 
 
     ![Azure DevOps](images/l4-05-92.png)
 
-### Task 3: Remove the Azure DevOps billing
+## Task 3: Remove the Azure DevOps billing
 
 In this task, you will remove pipeline billing to eliminate unnecessary charges.
 
@@ -134,7 +134,7 @@ In this task, you will remove pipeline billing to eliminate unnecessary charges.
    ![Branch Policies](images/l4-05-95.png)
 
 
-### Review
+## Review
 
 In this lab, you implemented security and compliance in an Azure DevOps pipeline using the Mend Bolt extension to scan for vulnerabilities and manage costs by removing Azure DevOps billing.
 
