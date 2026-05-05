@@ -40,7 +40,7 @@ In this task, you will add policies to the main branch and only allow changes us
 
     ![](images/l3-05-03.png)
 
-1. On the Build pipeline list, select **eshoponweb-ci-pr (4)** then click **Save (5)**.
+1. On the Build pipeline list, select **eshoponweb-ci-pr (1)** then click **Save (1)**.
 
     ![](images/dev88.png)
       
@@ -199,7 +199,7 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 
     ![](images/l3-05-16.png)
   
-1. Select **Create a new branch for this commit (1)** Keep the default branch name and **Start a pull request(2)** checked. and Click on **Save(3)**
+1. Select **Create a new branch for this commit (1)** Keep the default branch name and **Start a pull request (2)** checked. and Click on **Save (3)**
 
     ![](images/dev112.png)
 
@@ -314,3 +314,4 @@ In this lab, you have accomplished the following:
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next lab.
 
+![Launch Azure Portal](images/dev266.png)

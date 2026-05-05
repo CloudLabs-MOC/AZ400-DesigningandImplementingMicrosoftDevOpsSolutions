@@ -275,7 +275,7 @@ In this exercise, you will configure a release pipeline.
 
 In this task, you will set up the release tasks as part of the Release Pipeline.
 
-1. From the **eShopOnWeb_MultiStageYAML** project in the Azure DevOps portal, in the vertical navigational pane, select **Pipelines (1)** and then, within the **Pipelines** section, click **Releases(2)** and then click **New Pipeline(3)**.
+1. From the **eShopOnWeb_MultiStageYAML** project in the Azure DevOps portal, in the vertical navigational pane, select **Pipelines (1)** and then, within the **Pipelines** section, click **Releases (2)** and then click **New Pipeline (3)**.
     
     ![Azure devops](images/l4-05-29.png)
    
@@ -427,11 +427,15 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
     ![Azure devops](images/l4-05-42.png)
 
+    > **Note:** It might take around 5-10 minutes to build.
+
     > **Note:** After the build succeeds, the release will be triggered automatically, and the application will be deployed to both environments. Validate the release actions once the build pipeline has completed successfully.
 
 1. In the vertical navigational pane, in the **Pipelines** section, click **Releases (1)** and, on the **eShopOnWeb_MultiStageYAML** pane, click the entry representing the most recent release **(2)**. On the **eShopOnWeb_MultiStageYAML > Release-1** blade, track the progress of the release and verify that the deployment to both web apps completed successfully **(3)**.
 
     ![Azure devops](images/l4-05-43.png)
+
+    > **Note:** It might take around 5-10 minutes to complete.
 
 1. Switch back to the Azure portal interface, navigate to the resource group **Web-RG**, in the list of resources, click the **Canary** web app.
 
@@ -596,7 +600,7 @@ In this task, you will first generate some alerts for the Canary Web App, follow
 
 1. Return to the Azure DevOps Portal, open the **eShopOnWeb_MultiStageYAML** Project. Navigate to **Pipelines (1)**, select **Releases (2)**, and select the **New Release Pipeline (3)**. Click the **Create Release (4)** button.
 
-    ![Azure devops](images/l4-05-66.png) 
+    ![Azure devops](images/lab4-05-n2.png) 
  
 1. On **Create a new release** page, click on **Create**.
 
@@ -636,5 +640,5 @@ In this lab, you have accomplished the following:
 
 ### You have successfully completed the lab. Click on **Next >>** to proceed with the next lab.
 
-
+![Launch Azure Portal](images/dev266.png)
 
