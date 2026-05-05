@@ -35,41 +35,41 @@ By the end of this lab, you will be able to:
 
 ## Getting Started with the Lab
  
-### Accessing Your Lab Environment
+## Accessing Your Lab Environment
  
 Once you are ready to dive in, your virtual machine and **Guide** will be at your fingertips within your web browser.
 
    ![](images/gdev1.png)
 
-### Lab Guide Zoom In/Zoom Out
+## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕: 100%** icon next to the lab environment's timer.
 
    ![Manage Your Virtual Machine](images/dpg2.png)
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
-### Exploring Your Lab Resources
+## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
    ![Explore Lab Resources](images/gdev2.png)
  
-### Utilizing the Split Window Feature
+## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
  ![Use the Split Window Feature](images/gdev3.png)
  
-### Managing Your Virtual Machine
+## Managing Your Virtual Machine
  
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
  ![Manage Your Virtual Machine](images/gdev4.png)
 
-### Lab Validation
+## Lab Validation
 
 1. After completing the task, hit the **Validate** button under the Validation tab integrated into your lab guide. You can proceed to the next task if you receive a success message. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
@@ -94,62 +94,16 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-       ![Enter Your Password](images/afg8.png)
+       ![Enter Your Password](images/l1-05-g1.png)
 
 1. If you see the pop-up **Stay Signed in?**, click **No**.       
 
-1. If an **Action required** pop-up window appears, click on **Ask later**.
-
-   ![Ask Later](images/afg9.png)
-    
-1. If prompted to stay signed in, you can click **No**.
- 
-### Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible
-
-1. If you see the pop-up **Stay Signed in?**, click **No**.
-
-1. If **Action required** pop-up window appears, click on **Next**.
-   
-   ![](images/dpg11.png)
-
-1. On **Start by getting the app** page, click on **Next**.
-1. Click on **Next** twice.
-1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
-
-   ![Install](images/dpg12.png)
-
-   > Note: For iOS, open the App Store and repeat the steps.
-
-   > Note: Skip if already installed.
-
-1. Open the app and tap on **Scan a QR code**.
-
-1. Scan the QR code visible on the screen **(1)** and click on **Next (2)**.
-
-   ![QR code](images/dpg13.png)
-
-1. Enter the digit displayed on the Screen in the Authenticator app on your mobile and tap on **Yes**.
-
-1. Once the notification is approved, click on **Next**.
-
-   ![Approved](images/dpg14.png)
-
-1. Click on **Done**.
-
-1. If prompted to stay signed in, you can click **"No"**.
-
-1. Tap on **Finish** in the Mobile Device.
-
-   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
-
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+   ![Enter Your Password](images/l1-05-g2.png)
 
 
 This hands-on lab will guide you through implementing end-to-end DevOps practices using Azure DevOps and GitHub. You will deploy an Azure web app with GitHub Actions, set up CI/CD automation with YAML pipelines, and configure release gates based on app health. Additionally, you will integrate the Mend Bolt extension to detect open-source vulnerabilities, ensuring security and compliance in your pipeline.
 
-### Support Contact
+## Support Contact
 
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance anytime. We offer dedicated support channels tailored specifically for learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
