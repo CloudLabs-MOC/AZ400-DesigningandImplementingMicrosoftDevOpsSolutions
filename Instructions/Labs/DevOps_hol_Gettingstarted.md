@@ -114,6 +114,10 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
 
    ![Launch Azure Portal](images/afg6.png)
 
+   > **Note:** If you see any open PowerShell prompts running, please minimize them and proceed with the next steps.
+   
+   ![Launch Azure Portal](images/lab1-05-p1.png)
+
 1. You will see the **Sign in to the Microsoft Azure** tab. Here, enter your credentials:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>

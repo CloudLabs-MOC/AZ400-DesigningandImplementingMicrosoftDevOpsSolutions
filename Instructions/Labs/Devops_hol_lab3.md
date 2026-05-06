@@ -190,7 +190,7 @@ In this task, you will enable Continuous Integration by modifying the YAML build
       
       >**Note:** This will automatically trigger the build pipeline if any change is made to the main branch and the web application code (the src/web folder). Since you enabled Branch Policies, you need to pass a Pull Request to update your code. 
     
-1. Click the on the **Save and run (1)** dropdown and **Save (2)** button (not **Save and run**) to save the pipeline definition.
+1. Click on the **Save and run (1)** dropdown and **Save (2)** button (not **Save and run**) to save the pipeline definition.
 
     ![](images/l3-05-16.png)
   

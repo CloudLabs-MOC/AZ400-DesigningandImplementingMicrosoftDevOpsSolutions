@@ -39,7 +39,7 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 
     ![Azure DevOps](images/dev34.png)
     
-1. In the **Organization Setting** window on the left menu click on **Billing (1)** and select **Setup Billing (2)** then click on **Save (3)**.
+1. In the **Organization Settings** window on the left menu click on **Billing (1)** and select **Setup Billing (2)** then click on **Save (3)**.
 
     ![Azure DevOps](images/dev35.png)
 
@@ -353,7 +353,7 @@ In this task, you will open and configure the ADOGenerator Selenium project in V
 
     ![Azure DevOps](images/dev304.png)
 
-1. On the Lab VM, search for **Visual Studio (1)** and the the select **Visual studio 2022 (2)**.
+1. On the Lab VM, search for **Visual Studio (1)** and then select **Visual studio 2022 (2)**.
 
     ![Azure DevOps](images/dev277.png)
 
@@ -417,7 +417,7 @@ In this task, you will open and configure the ADOGenerator Selenium project in V
 
       ![Azure DevOps](images/dev307.png)    
 
-1. Navigate back to the **Azure DevOps**, you can see te new created **Selenium project**.
+1. Navigate back to the **Azure DevOps**, you can see the newly created **Selenium project**.
 
     ![Azure DevOps](images/dev308.png)
 
@@ -637,7 +637,7 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
       ![Azure DevOps](images/dev331.png)         
 
-    - Click on on **Start** to start the services
+    - Click on **Start** to start the services
 
       ![Azure DevOps](images/dev332.png)           
 

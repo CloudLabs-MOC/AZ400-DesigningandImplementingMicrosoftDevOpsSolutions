@@ -237,7 +237,7 @@ In this task, you will review the GitHub workflow execution.
 
     ![GitHub workflow in progress](images/l1-05-20.png)
 
-1. You will see the workflow setup on top before executing. Click on **Update eshoponweb-ccid.yml**, which is associated with **eShopOnWeb Build and Test**.
+1. You will see the workflow setup on top before executing. Click on **Update eshoponweb-cicd.yml**, which is associated with **eShopOnWeb Build and Test**.
 
     ![GitHub workflow in progress](images/l1-05-21.png)
 
