@@ -14,10 +14,6 @@ In this lab you will complete the following exercises:
 - Configure GitHub repository settings and Azure service principal
 - Update and run a GitHub Actions workflow to deploy the web app to Azure
 
-## Architecture Diagram
-
-   ![Architecture Diagram](images/devarcc1.png)
-
 ## Lab requirements
 
 - If you don't already have a GitHub account that you can use for this lab, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/get-started/signing-up-for-github/signing-up-for-a-new-github-account).
@@ -241,7 +237,7 @@ In this task, you will review the GitHub workflow execution.
 
     ![GitHub workflow in progress](images/l1-05-20.png)
 
-1. You will see the workflow setup on top before executing. Click on **Update eshoponweb-ccid.yml**, which is associated with **eShopOnWeb Build and Test**.
+1. You will see the workflow setup on top before executing. Click on **Update eshoponweb-cicd.yml**, which is associated with **eShopOnWeb Build and Test**.
 
     ![GitHub workflow in progress](images/l1-05-21.png)
 
@@ -280,7 +276,7 @@ In this task, you will review the GitHub workflow execution.
 
    <validation step="bbf0a520-41e6-41d4-97ab-23cda9045900" />   
     
-## Review
+## Summary
 
 In this lab, you implemented a GitHub Action workflow that deploys a dynamic Azure web app by using Azure DevOps.
 

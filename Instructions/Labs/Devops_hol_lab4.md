@@ -16,11 +16,6 @@ In this lab, you will be performing the following exercises:
 - Exercise 3: Configure release gates
 - Exercise 4: Test release gates
 
-
-## Architecture Diagram
-
-  ![Architecture Diagram](images/lab7-architecture-new.png) 
-
 # Exercise 0: Configure the lab prerequisites
 
 In this exercise, you will set up the prerequisites for the lab, which consist of a new Azure DevOps project with a repository based on the [eShopOnWeb](https://dev.azure.com/unhueteb/_git/eshopweb-az400).
@@ -119,7 +114,7 @@ In this task, you will create two Azure web apps representing the **Canary** and
 
 1. In the Azure portal, click the **Cloud Shell** icon, located directly to the right of the search textbox at the top of the page.
 
-   ![Clouldshell](images/l1-05-06.png)
+   ![CloudShell](images/l1-05-06.png)
     
 1. From the **Bash** prompt, in the **Cloud Shell** pane, run the following command to create a resource group. 
 
@@ -131,7 +126,7 @@ In this task, you will create two Azure web apps representing the **Canary** and
     az group create -n $RESOURCEGROUPNAME -l $REGION
     ```
 
-     ![Clouldshell](images/l4-05-13.png)    
+     ![CloudShell](images/l4-05-13.png)    
 
 1. To create an **App service plan**.
 
@@ -140,7 +135,7 @@ In this task, you will create two Azure web apps representing the **Canary** and
     az appservice plan create -g $RESOURCEGROUPNAME -n $SERVICEPLANNAME --sku S1
     ```
 
-     ![Clouldshell](images/l4-05-14.png)    
+     ![CloudShell](images/l4-05-14.png)    
 
 1. Create two **Web apps** with unique app names.
  
@@ -158,7 +153,7 @@ In this task, you will create two Azure web apps representing the **Canary** and
     az webapp list --query "[].name" -o tsv
     ```
 
-     ![Clouldshell](images/l4-05-15.png)     
+     ![CloudShell](images/l4-05-15.png)     
 
       > **Note:** Record the name of the Canary web app. You will need it later in this lab. The canary web app should look like: **RGATES495017526-Canary**
 
@@ -177,7 +172,7 @@ In this task, you will configure an Application Insights resource in the Azure p
 
 1. In the Azure portal, use the **Search resources, services, and docs** text box at the top of the page to search for **Application Insights (1)** and, in the list of results, select **Application Insights (2)**.
 
-    ![Clouldshell](images/l4-05-16.png) 
+    ![CloudShell](images/l4-05-16.png) 
    
 1. On the **Application Insights** blade, select **+ Create**.
 
@@ -187,12 +182,12 @@ In this task, you will configure an Application Insights resource in the Azure p
 
     | Setting | Value |
     | --- | --- |
-    | Sunscription | Leave the default one **(1)** |    
+    | Subscription | Leave the default one **(1)** |    
     | Resource group | **Web-RG (2)** |
     | Name | the name of the Canary web app you recorded in the previous task **(3)** |
     | Region | the same Azure region to which you deployed the web apps earlier in the previous task **(4)** |
     
-    ![Clouldshell](images/l4-05-18.png) 
+    ![CloudShell](images/l4-05-18.png) 
 
      > **Note:** Disregard the deprecation message. This is required to prevent failures of the Enable Continuous Integration DevOps task you will be using later in this lab.
 
@@ -626,7 +621,7 @@ In this task, you will first generate some alerts for the Canary Web App, follow
 
     ![Azure devops](images/l4-05-70.png) 
     
-## Review
+## Summary
 
 In this lab, you configured release pipelines and then configured and tested release gates.
 

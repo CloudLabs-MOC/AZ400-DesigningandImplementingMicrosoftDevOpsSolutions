@@ -15,10 +15,6 @@ In this lab you will complete the following exercises:
 - Exercise 3: Manage Azure DevOps agent pools
 - Exercise 4: Implement Selenium tests by using a self-hosted Azure DevOps agent
 
-## Architecture Diagram
-
-![Architecture Diagram](images/devarcc-2.png)   
-
 ## Lab requirement:
 
 ### Set up an Azure DevOps organization
@@ -35,8 +31,6 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 
     ![Azure DevOps](images/dev32.png)
 
-1. If pop-up for *Action Required* is prompted, select **Ask later**. 
-
 1. On the next page, accept defaults, fill the captcha **(1)** and click on **Continue (2)**.
 
     ![Azure DevOps](images/dev33.png)
@@ -45,7 +39,7 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 
     ![Azure DevOps](images/dev34.png)
     
-1. In the **Organization Setting** window on the left menu click on **Billing (1)** and select **Setup Billing (2)** then click on **Save (3)**.
+1. In the **Organization Settings** window on the left menu click on **Billing (1)** and select **Setup Billing (2)** then click on **Save (3)**.
 
     ![Azure DevOps](images/dev35.png)
 
@@ -68,7 +62,6 @@ In this task, you will create an **eShopOnWeb** Azure DevOps project to be used 
     ![Azure DevOps](images/l2-05-1.png)
  
 1. Click on **New Project**. Give your project the name  **eShopOnWeb (1)**, verify **Private (2)** under **Visibility**, and then choose **+ Create project (3)**.
-
 
       ![](images/l2-05-2.png)
 
@@ -360,7 +353,7 @@ In this task, you will open and configure the ADOGenerator Selenium project in V
 
     ![Azure DevOps](images/dev304.png)
 
-1. On the Lab VM, search for **Visual Studio (1)** and the the select **Visual studio 2022 (2)**.
+1. On the Lab VM, search for **Visual Studio (1)** and then select **Visual studio 2022 (2)**.
 
     ![Azure DevOps](images/dev277.png)
 
@@ -424,7 +417,7 @@ In this task, you will open and configure the ADOGenerator Selenium project in V
 
       ![Azure DevOps](images/dev307.png)    
 
-1. Navigate back to the **Azure DevOps**, you can see te new created **Selenium project**.
+1. Navigate back to the **Azure DevOps**, you can see the newly created **Selenium project**.
 
     ![Azure DevOps](images/dev308.png)
 
@@ -644,7 +637,7 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
       ![Azure DevOps](images/dev331.png)         
 
-    - Click on on **Start** to start the services
+    - Click on **Start** to start the services
 
       ![Azure DevOps](images/dev332.png)           
 
@@ -668,8 +661,7 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
     ![Azure DevOps](images/l2-05-45.png)
 
-
-## Review
+## Summary
 
 In this lab, you learned how to convert classic pipelines into YAML-based ones and how to implement and use self-hosted agents.
 

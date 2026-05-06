@@ -13,11 +13,6 @@ In this lab, you will complete the following exercises:
 - Exercise 1: Include build validation as part of a Pull Request 
 - Exercise 2: Configure CI Pipeline as Code with YAML
 
-
-## Architecture Diagram
-
-  ![Architecture Diagram](images/lab4-architecture-new.png)
-
 # Exercise 1: Include build validation as part of a Pull Request 
 
 In this exercise, you will configure branch policies on the main branch to enforce pull request validation and ensure code reviews before merging changes. You will then create and manage a pull request in Azure DevOps, merging changes from a new branch into the protected main branch.
@@ -195,7 +190,7 @@ In this task, you will enable Continuous Integration by modifying the YAML build
       
       >**Note:** This will automatically trigger the build pipeline if any change is made to the main branch and the web application code (the src/web folder). Since you enabled Branch Policies, you need to pass a Pull Request to update your code. 
     
-1. Click the on the **Save and run (1)** dropdown and **Save (2)** button (not **Save and run**) to save the pipeline definition.
+1. Click on the **Save and run (1)** dropdown and **Save (2)** button (not **Save and run**) to save the pipeline definition.
 
     ![](images/l3-05-16.png)
   
@@ -302,7 +297,7 @@ In this task, you will enable Continuous Integration by modifying the YAML build
      
       ![](images/l3-05-26.png)
      
-## Review
+## Summary
   
 In this lab, you learned how to define and manage build pipelines in Azure DevOps using YAML. You configured branch policies for build validation in pull requests, worked with feature branches, and set up a CI pipeline as code. The lab included importing YAML build definitions, enabling continuous integration, and testing the pipeline to automate and validate code changes efficiently.
 
