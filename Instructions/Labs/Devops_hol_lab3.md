@@ -13,11 +13,6 @@ In this lab, you will complete the following exercises:
 - Exercise 1: Include build validation as part of a Pull Request 
 - Exercise 2: Configure CI Pipeline as Code with YAML
 
-
-## Architecture Diagram
-
-  ![Architecture Diagram](images/lab4-architecture-new.png)
-
 # Exercise 1: Include build validation as part of a Pull Request 
 
 In this exercise, you will configure branch policies on the main branch to enforce pull request validation and ensure code reviews before merging changes. You will then create and manage a pull request in Azure DevOps, merging changes from a new branch into the protected main branch.

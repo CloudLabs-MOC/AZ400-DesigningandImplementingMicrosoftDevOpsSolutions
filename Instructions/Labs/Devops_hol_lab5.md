@@ -12,10 +12,6 @@ In this lab, you will complete the following exercises:
 
 - Exercise 1: Implement Security and Compliance in an Azure DevOps pipeline by using Mend Bolt 
 
-## Architecture Diagram
-
-  ![Architecture Diagram](images/devarc5.png)
-
 # Exercise 1: Implement Security and Compliance in an Azure DevOps pipeline by using Mend Bolt 
 
 In this exercise, you will implement security and compliance in an Azure DevOps pipeline using Mend Bolt. You will activate the Mend Bolt extension, create and trigger a build to scan for vulnerabilities in open source components, and remove Azure DevOps billing to avoid unnecessary charges.

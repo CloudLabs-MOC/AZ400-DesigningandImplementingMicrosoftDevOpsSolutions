@@ -15,10 +15,6 @@ In this lab you will complete the following exercises:
 - Exercise 3: Manage Azure DevOps agent pools
 - Exercise 4: Implement Selenium tests by using a self-hosted Azure DevOps agent
 
-## Architecture Diagram
-
-![Architecture Diagram](images/devarcc-2.png)   
-
 ## Lab requirement:
 
 ### Set up an Azure DevOps organization

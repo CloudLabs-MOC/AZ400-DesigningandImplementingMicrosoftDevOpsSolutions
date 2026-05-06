@@ -14,10 +14,6 @@ In this lab you will complete the following exercises:
 - Configure GitHub repository settings and Azure service principal
 - Update and run a GitHub Actions workflow to deploy the web app to Azure
 
-## Architecture Diagram
-
-   ![Architecture Diagram](images/devarcc1.png)
-
 ## Lab requirements
 
 - If you don't already have a GitHub account that you can use for this lab, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/get-started/signing-up-for-github/signing-up-for-a-new-github-account).

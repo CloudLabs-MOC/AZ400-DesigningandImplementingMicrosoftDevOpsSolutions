@@ -16,11 +16,6 @@ In this lab, you will be performing the following exercises:
 - Exercise 3: Configure release gates
 - Exercise 4: Test release gates
 
-
-## Architecture Diagram
-
-  ![Architecture Diagram](images/lab7-architecture-new.png) 
-
 # Exercise 0: Configure the lab prerequisites
 
 In this exercise, you will set up the prerequisites for the lab, which consist of a new Azure DevOps project with a repository based on the [eShopOnWeb](https://dev.azure.com/unhueteb/_git/eshopweb-az400).
