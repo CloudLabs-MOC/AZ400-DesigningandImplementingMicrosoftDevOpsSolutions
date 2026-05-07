@@ -69,7 +69,7 @@ The architecture for this lab involves the following key components:
  
 Once you are ready to dive in, your virtual machine and **Guide** will be at your fingertips within your web browser.
 
-   ![](images/gdev1.png)
+   ![](images/labvm-n1.png)
 
 ## Lab Guide Zoom In/Zoom Out
 

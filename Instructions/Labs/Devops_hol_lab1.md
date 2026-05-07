@@ -278,8 +278,6 @@ In this task, you will review the GitHub workflow execution.
     
 ## Summary
 
-In this lab, you implemented a GitHub Action workflow that deploys a dynamic Azure web app by using Azure DevOps.
-
 In this lab, you have accomplished the following:
 
 - Exercise 1: Imported eShopOnWeb to your GitHub Repository

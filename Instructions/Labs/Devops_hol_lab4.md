@@ -623,8 +623,6 @@ In this task, you will first generate some alerts for the Canary Web App, follow
     
 ## Summary
 
-In this lab, you configured release pipelines and then configured and tested release gates.
-
 In this lab, you have accomplished the following:
 
 - Exercise 0: Configured the lab prerequisites
