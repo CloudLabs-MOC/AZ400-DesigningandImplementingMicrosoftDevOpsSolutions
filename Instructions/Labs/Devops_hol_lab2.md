@@ -663,8 +663,6 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
 ## Summary
 
-In this lab, you learned how to convert classic pipelines into YAML-based ones and how to implement and use self-hosted agents.
-
 In this exercise, you have accomplished the following:
 
 - Exercise 1: Configured the lab prerequisites
