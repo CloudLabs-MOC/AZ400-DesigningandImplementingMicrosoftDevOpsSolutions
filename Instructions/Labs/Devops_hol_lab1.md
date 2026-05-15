@@ -252,6 +252,8 @@ In this task, you will review the GitHub workflow execution.
     ![GitHub workflow in progress](images/l1-05-22.png)
 
      >**NOTE:** The workflow might take around 10 minutes to complete. Please wait until it is _Succeeded_, as illustrated above.
+     
+     >**Note:** If the workflow fails due to quota issues, please change the region to **Canada Central** or **Sweden Central**.
 
 1. Navigate back to the [Azure Portal](https://portal.azure.com/).
 
