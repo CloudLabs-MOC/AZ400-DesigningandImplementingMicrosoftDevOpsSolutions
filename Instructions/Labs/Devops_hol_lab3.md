@@ -25,7 +25,7 @@ In this task, you will add policies to the main branch and only allow changes us
 
 1. Go to **Repos (1)>Branches (2)** section. On the **Mine** tab of the **Branches** pane, hover the mouse pointer over the **main (3)** branch entry to reveal the **ellipsis symbol (4)** on the right side. Select **Branch Policies (5)**.
 
-    ![](images/l3-05-01.png)
+    ![](images/L3E1T1S2.png)
 
 1. On the main tab of the repository settings, enable the option for **Require minimum number of reviewers (1)**. Add **1 (2)** reviewer and check the box **Allow requestors to approve their own changes (3)**(as you are the only user in your project for the lab)
 
@@ -47,7 +47,7 @@ In this task, you will use the Azure DevOps portal to create a Pull Request, usi
  
 1. Navigate to the **Repos (1)->Branches (2)** section in the eShopOnWeb navigation and click **New Branch (3)**.
 
-    ![](images/l3-05-04.png)
+    ![](images/L3E1T2S1.png)
 
 1. Create a new branch named **Feature01 (1)** based on the **main** branch and click **Create (2)**.
 
@@ -57,9 +57,9 @@ In this task, you will use the Azure DevOps portal to create a Pull Request, usi
 
 1. Navigate to the **/eShopOnWeb/src(1)/Web(2)/Program.cs (3)** file as part of the **Feature01** branch.
 
-    ![](images/dev91.png)
+    ![](images/L3E1T2S4.png)
     
-    ![](images/dev92.png)
+    ![](images/L3E1T2S4i.png)
 
 1. Click on **Edit**.
 
@@ -94,19 +94,19 @@ In this task, you will use the Azure DevOps portal to create a Pull Request, usi
     
 1. Search for the ODL user email **<inject key="AzureAdUserEmail"></inject> (1)** and select from the list **(2)**. 
 
-    ![](images/dev98.png)
+    ![](images/L3E1T2S11.png)
 
 1. Build validation, you will see that the build **eshoponweb-ci-pr** was triggered automatically
          
-    ![](images/l3-05-09.png)    
+    ![](images/L3E1T2S12.png)    
 
 1. On the top-right, click on **Approve**.
 
-    ![](images/dev267.png)    
+    ![](images/L3E1T2S13.png)    
       
 1. Wait for the validation to succeed before proceeding.
 
-    ![](images/l3-05-10.png)
+    ![](images/L3E1T2S14.png)
 
      >**Note:** It might take around 2-3 minutes.
 
@@ -118,7 +118,7 @@ In this task, you will use the Azure DevOps portal to create a Pull Request, usi
 
    ![](images/l3-05-12.png)
 
-   ![](images/l3-05-13.png)
+   ![](images/L3E1T2S16i.png)
 
 
 # Exercise 2: Configure CI Pipeline as Code with YAML
@@ -133,19 +133,19 @@ Let's start by importing the CI pipeline named **eshoponweb-ci.yml**.
 
 1. Go to **Pipelines (1)>Pipelines (2)** and click on **New Pipeline (3)** button.
 
-    ![](images/l3-05-14.png)
+    ![](images/L3E2T1S1.png)
 
 1. Select **Azure Repos Git (YAML)**.
 
-    ![](images/l3-05-15.png)
+    ![](images/L3E2T1S2.png)
 
 1. Select the **eShopOnWeb** repository.
 
-    ![](images/dev106.png)
+    ![](images/L3E2T1S3.png)
 
 1. Select **Existing Azure Pipelines YAML File**
 
-    ![](images/dev107.png)
+    ![](images/L3E2T1S4.png)
 
 1. Select the **/.ado/eshoponweb-ci.yml (1)** file then click on **Continue (2)**
 
@@ -184,7 +184,7 @@ In this task, you will enable Continuous Integration by modifying the YAML build
         - src/web/*
     ``` 
 
-     ![](images/dev110.png)
+     ![](images/L3E2T2S1.png)
 
       >**Note:** Be careful with copy/paste, make sure you have the same indentation shown above.
       
@@ -208,21 +208,21 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 
 1. Go to **Repos (1)>Pullrequests (2)** and click on the existing pull request **(3)**. 
 
-    ![](images/l3-05-18.png)
+    ![](images/L3E2T2S6.png)
 
 1. Click on **Approve** on the top-right.
 
-    ![](images/l3-05-19.png)
+    ![](images/L3E2T2S7.png)
 
 1. Once the **Required checks are succeeded (1)**, click on **Complete (2)** drop down and then select **Complete (3)**.
 
-    ![](images/dev269.png)
+    ![](images/L3E2T2S8.png)
 
 1. On the **Complete Pull Request** tab, select only **Complete associated work items after merging (1)** checkbox  and Click on **Complete Merge (2)**
 
     ![](images/l3-05-12.png)
 
-    ![](images/dev120.png)
+    ![](images/L3E2T2S9i.png)
   
 ## Task 3: Test the CI pipeline
  
@@ -230,7 +230,7 @@ In this task, you will enable Continuous Integration by modifying the YAML build
  
 1. Navigate to the **Repos (1)->Branches (2)** section. Create a **New branch (3)**.
 
-    ![](images/l3-05-20.png)
+    ![](images/L3E2T3S1.png)
 
 1. Create a branch named **Feature02 (1)** based on the **main** branch and Click on **Create (2)**.    
     
@@ -240,9 +240,9 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 
 1. Navigate to the **/eShopOnWeb/src (1)/Web (2)/Program.cs (3)** file.
 
-    ![](images/l3-05-21.png)
+    ![](images/L3E2T3S4.png)
     
-    ![](images/dev123.png)
+    ![](images/L3E2T3S4i.png)
 
 1. Click on **Edit (1)** to remove the first line // **Testing my PR (2)**.
    
@@ -268,11 +268,11 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 
 1. Click on **Approve** from top right.
 
-    ![](images/dev270.png)
+    ![](images/L3E2T3S11.png)
 
 1. Once the **Required checks are succeeded (1)**, click on **Complete (2)** drop down and then select **Complete (3)**.
 
-    ![](images/l3-05-23.png)
+    ![](images/L3E2T3S12.png)
 
      >**Note:** Please wait. The required checks might take 3-5 minutes to complete.     
 
@@ -282,20 +282,20 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 
 1. Go back to **Pipelines (1)>Pipelines (2)**, you will notice that the build **eshoponweb-ci (3)** was triggered automatically after the code was merged. Select it.
 
-    ![](images/l3-05-24.png)
+    ![](images/L3E2T3S14.png)
  
 1. On the **eshoponweb-ci** build, select the last run.
 
-    ![](images/dev259.png)
+    ![](images/L3E2T3S15.png)
 
 1. After its successful execution, click on **Related (1) > Published (2)** to check the published artifacts:
            
-    ![](images/l3-05-25.png) 
+    ![](images/L3E2T3S16.png) 
      
     - **Bicep:** the infrastructure artifact  
     - **Website:** the app artifact
      
-      ![](images/l3-05-26.png)
+      ![](images/L3E2T3S16i.png)
      
 ## Summary
   
