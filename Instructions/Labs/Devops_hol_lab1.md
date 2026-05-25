@@ -86,11 +86,11 @@ In this task, you will create an empty public GitHub repository and import the e
 
 1. Wait for the import to complete.
 
-    ![](images/dev3.png)
+    ![](images/L1E1T1S8.png)
 
 1. On the repository page, go to **Settings (1)**, click on **Actions (2)> General (3)** and choose the option **Allow all actions and reusable workflows (4)**. Click on **Save (5)**.
 
-    ![Enable GitHub Actions](images/l1-05-04.png)
+    ![Enable GitHub Actions](images/L1E1T1S9.png)
 
 # Exercise 2: Set up your GitHub Repository and Azure access
 
@@ -179,7 +179,7 @@ In this task, you will create the Azure Service Principal used by GitHub to depl
 
 1. On the repository page, go to **Settings (1)**, click on **Secrets and variables (2)> Actions (3)**. Click on **New repository secret (4)** under Repository secrets.
 
-      ![](images/l1-05-11.png)
+      ![](images/L1E2T1S13.png)
 
 1. On the **Action Secret/New secret** tab, add the following:
     
