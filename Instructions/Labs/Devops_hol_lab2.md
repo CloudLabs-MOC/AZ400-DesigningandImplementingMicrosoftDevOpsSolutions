@@ -27,11 +27,11 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-1. On the **Get started with Azure DevOps**, click on **Continue**.
+1. On the **Get started with Azure DevOps**, name the project as leave the default name **(1)**, then click on **Continue (2)**.
 
-    ![Azure DevOps](images/dev32.png)
+    ![Azure DevOps](images/L2.png)
 
-1. On the next page, accept defaults, fill the captcha **(1)** and click on **Continue (2)**.
+    >**Next:** If prompted for captcha on the next page, accept defaults, fill the captcha **(1)** and click on **Continue (2)**.
 
     ![Azure DevOps](images/dev33.png)
     
@@ -50,6 +50,7 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 1. On the **MS Hosted CI/CD** section under **Paid parallel jobs** enter value **1** **(1)** and at the end of the page click on **Save (2)**.
 
     ![Azure DevOps](images/L6.png)
+    
     ![Azure DevOps](images/L6i.png)
    
 # Exercise 1: Configure the lab prerequisites 
