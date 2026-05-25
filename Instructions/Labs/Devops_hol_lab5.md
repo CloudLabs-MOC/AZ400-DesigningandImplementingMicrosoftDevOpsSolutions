@@ -22,15 +22,15 @@ In this task, you will activate the Mend Bolt extension in Azure DevOps by insta
 
 1. On the Azure DevOps page, click on **Azure DevOps** located in the top left corner.
 
-    ![Azure DevOps](images/l4-05-71.png)
+    ![Azure DevOps](images/L5E1T1S1.png)
 
 1. Then click on **Organization Settings** at the bottom  left corner. 
 
-    ![Azure DevOps](images/l4-05-72.png)
+    ![Azure DevOps](images/L4.png)
 
 1. Navigate to **Extensions (1)** under **General** and click on **Browse marketplace (2)**.
 
-    ![Azure DevOps](images/l4-05-73.png)
+    ![Azure DevOps](images/L5E1T1S3.png)
 
 1. Search for **Mend Bolt (1)**, click on **Search (2)** icon and then select from the results **(3)**.
 
@@ -50,7 +50,7 @@ In this task, you will activate the Mend Bolt extension in Azure DevOps by insta
 
 1. On the **Organization Settings**, select **Mend (1)** under Extensions. Provide your First name, Last name, Work Email, Company Name, and other details **(2)** and then click **Create Account (3)** button to start using the Free version.    
 
-    ![Azure DevOps](images/l4-05-79.png)
+    ![Azure DevOps](images/L5E1T1S8.png)
 
 
 ## Task 2: Create and Trigger a build 
@@ -59,19 +59,19 @@ In this task, you will create and trigger a build in Azure DevOps by editing an 
 
 1. On the **Organization Setting** page, click on **Azure DevOps** located at top left corner.
 
-    ![Azure DevOps](images/l4-05-80.png)
+    ![Azure DevOps](images/L5E1T2S1.png)
 
 1. Select the **eShopOnWeb_MultiStageYAML** project.
 
-    ![Azure DevOps](images/dev208.png)
+    ![Azure DevOps](images/L5E1T2S2.png)
 
 1. Select **Pipelines (1)** under **Pipelines** section, then select the recent pipeline **(2)**.
 
-    ![Azure DevOps](images/l4-05-81.png)
+    ![Azure DevOps](images/L5E1T2S3.png)
 
 1. Click on **Edit**.
 
-    ![Azure DevOps](images/l4-05-82.png)
+    ![Azure DevOps](images/L5E1T2S4.png)
 
 1. On the **Show assistant**, Search for **Mend (1)** and select **Mend Bolt (2)** from the results.
 
@@ -99,15 +99,17 @@ In this task, you will create and trigger a build in Azure DevOps by editing an 
 
 1. Click on **build**.
 
-    ![Azure DevOps](images/l4-05-90.png)
+    ![Azure DevOps](images/L5E1T2S11.png)
 
 1. Once the build is completed **(1)**, click back navigation **(2)** to see the summary, which shows Test results, Build artifacts, etc., as shown below.    
 
-    ![Azure DevOps](images/l4-05-91.png)
+    ![Azure DevOps](images/L5E1T2S12.png)
+
+    > **Note:** Please ensure this pipeline is executed then proceed with the next steps.
 
 1. Navigate to **Mend Bolt** tab. This shows the list of all vulnerable open source components with Vulnerability Risk, Vulnerable Libraries, and Severity Distribution.
 
-    ![Azure DevOps](images/l4-05-92.png)
+    ![Azure DevOps](images/L5E1T2S13.png)
 
 ## Task 3: Remove the Azure DevOps billing
 
@@ -115,15 +117,15 @@ In this task, you will remove pipeline billing to eliminate unnecessary charges.
 
 1. On the lab computer, switch to the browser window displaying the Azure DevOps organization homepage by clicking on **Azure DevOps** from the top left corner.
 
-   ![Branch Policies](images/l4-05-93.png)
+   ![Branch Policies](images/L5E1T3S1.png)
 
 1. Select **Organization Settings** at bottom left corner.
 
-   ![Branch Policies](images/l4-05-72.png)
+   ![Branch Policies](images/L4.png)
 
 1. Under **Organization Settings** select **Billing (1)** from the left pane and click on **Change billing (2)** button to open Change billing pane.
 
-   ![Branch Policies](images/l4-05-94.png)
+   ![Branch Policies](images/L5E1T3S3.png)
 
 1. In the **Change billing** pane, select **Remove billing (1)** setting and click on **Save (2)**.      
 

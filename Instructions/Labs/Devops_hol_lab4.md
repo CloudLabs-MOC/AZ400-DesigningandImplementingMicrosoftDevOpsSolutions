@@ -26,7 +26,7 @@ In this task, you will create an **eShopOnWeb_MultiStageYAML** Azure DevOps proj
 
 1. On your lab computer, in a browser window, click on **Azure DevOps** from the top left corner. Click on **+ New Project**.
 
-    ![Azure DevOps](images/l4-05-1.png)
+    ![Azure DevOps](images/L4E0T1S1.png)
 
 1. In the **Create new project** pane, enter **eShopOnWeb_MultiStageYAML (1)** as the project name, verify **Private (2)** under **Visibility**, and then choose **Create (3)**.
 
@@ -40,11 +40,11 @@ In this task you will import the eShopOnWeb Git repository that will be used by 
 
 1. Navigate to **Repos (1)>Files (2)** and then click on **Import (3)** within the **Import a repository** card. On the **Import a Git Repository** window, paste the following URL https://github.com/CloudLabs-MOC/eShopOnWeb.git **(4)** and click on **Import (5):**
 
-    ![Import Repository](images/l4-05-3.png)
+    ![Import Repository](images/L4E0T2S2.png)
 
 1. The repository is organized in the following way:
 
-    ![Azure DevOps](images/l4-05-4.png)
+    ![Azure DevOps](images/L4E0T2S3.png)
 
     - **.ado** folder contains Azure DevOps YAML pipelines
     - **.devcontainer** folder container setup to develop using containers (either locally in VS Code or GitHub Codespaces)
@@ -54,13 +54,13 @@ In this task you will import the eShopOnWeb Git repository that will be used by 
 
 1. Go to **Repos (1) > Branches (2)**. Make sure the **main** branch is set as a **default** branch **(3)**.
 
-    ![Azure DevOps](images/l4-05-5.png)
+    ![Azure DevOps](images/L4E0T2S4.png)
 
-1. If not, on the **Branches** **(1)**, hover on the **main** branch, then click the ellipsis on the right of the column **(2)**. Click on **Set as default branch (3)**.
+    >**Note:** If there is only one branch, then it is considered as the default branch automatically. You can proceed with the next task.
 
-    ![Import Repository](images/az-400-5.png)
+    >**Note:** If not, on the **Branches** **(1)**, hover on the **main** branch, then click the ellipsis on the right of the column **(2)**. Click on **Set as default branch (3)**.
 
-     >**Note:** If there is only one branch, then it is considered as the default branch automatically. You can proceed with the next task.
+    ![Import Repository](images/L4E0T2S4n.png)
 
 ## Task 3: Configure CI Pipeline as Code with YAML in Azure DevOps
 
@@ -68,15 +68,15 @@ In this task, you will add a YAML build definition to the existing project.
 
 1. Navigate back to the **Pipelines (1)** pane in of the **Pipelines** hub. Click **Create pipeline (2)**.
 
-    ![Azure DevOps](images/l4-05-6.png)
+    ![Azure DevOps](images/L4E0T3S1.png)
        
 1. On the **Where is your code?** pane, click **Azure Repos Git (YAML)** option.
    
-    ![Azure DevOps](images/l4-05-7.png)
+    ![Azure DevOps](images/L4E0T3S2.png)
       
 1. On the **Select a repository** pane, click **eShopOnWeb_MultiStageYAML**.
    
-    ![Import Repository](images/l4-05-8.png)
+    ![Import Repository](images/L4E0T3S3.png)
    
 1. On the **Configure your pipeline** pane, scroll down and select **Existing Azure Pipelines YAML File**.
    
@@ -96,9 +96,9 @@ In this task, you will add a YAML build definition to the existing project.
    
 1. Wait for the Build Pipeline to complete successfully. Ignore any warnings regarding the source code itself, as they are not relevant for this lab exercise.
    
-    ![Import Repository](images/l4-05-12.png)
+    ![Import Repository](images/L4E0T3S7.png)
 
-     >**Note:** Wait for the pipeline build to succeed. It might take around 5 minutes.
+     >**Note:** Wait for the pipeline build to succeed. It might take around 5 minutes. Please ensure this pipeline is executed then proceed with the next steps.
    
      >**Note:** Each task from the YAML file is available for review, including any warnings and errors.
 
@@ -272,7 +272,7 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
 1. From the **eShopOnWeb_MultiStageYAML** project in the Azure DevOps portal, in the vertical navigational pane, select **Pipelines (1)** and then, within the **Pipelines** section, click **Releases (2)** and then click **New Pipeline (3)**.
     
-    ![Azure devops](images/l4-05-29.png)
+    ![Azure devops](images/L4E2T1S1.png)
    
      > **Note** - If you are unable to see the **Releases** under pipelines, navigate to the Azure DevOps page, from the bottom left, click on **Organization settings**, go to the **Pipelines (1)** section, and click **Settings (2)**. **Turn off(3)** the **Disable creation of classic release pipelines**.
    
@@ -408,7 +408,7 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
 1. In the browser window displaying the **eShopOnWeb_MultiStageYAML** project, in the vertical navigational pane, in the **Pipelines (1)** section, click **Pipelines (2)**. Click the entry representing **eShopOnWeb_MultiStageYAML (3)** build pipeline
 
-    ![](images/l4-05-39.png)
+    ![](images/L4E2T1S31.png)
 
 1. On the **eShopOnWeb_MultiStageYAML** pane, click on **Run Pipeline**.
 
@@ -420,7 +420,7 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
 1. Click on Build and wait for the build pipeline to finish.
 
-    ![Azure devops](images/l4-05-42.png)
+    ![Azure devops](images/L4E2T1S34.png)
 
     > **Note:** It might take around 5-10 minutes to build.
 
@@ -428,7 +428,7 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
 1. In the vertical navigational pane, in the **Pipelines** section, click **Releases (1)** and, on the **eShopOnWeb_MultiStageYAML** pane, click the entry representing the most recent release **(2)**. On the **eShopOnWeb_MultiStageYAML > Release-1** blade, track the progress of the release and verify that the deployment to both web apps completed successfully **(3)**.
 
-    ![Azure devops](images/l4-05-43.png)
+    ![Azure devops](images/L4E2T1S35.png)
 
     > **Note:** It might take around 5-10 minutes to complete.
 
@@ -470,7 +470,7 @@ In this task, you will configure pre-deployment gates.
 
 1. Switch to the web browser window displaying the Azure DevOps portal, and open the **eShopOnWeb_MultiStageYAML** project. In the vertical navigational pane, in the **Pipelines** section, click **Releases (1)** and, on the **New Release Pipeline (2)** pane, click **Edit (3)**.
 
-    ![Azure devops](images/l4-05-48.png)
+    ![Azure devops](images/L4E3T1S1.png)
 
 1. On the **All pipelines > New Release Pipeline** pane, on the left edge of the rectangle representing the **Canary Environment** stage, click the oval shape representing the **Pre-deployment conditions**.
 
@@ -478,7 +478,7 @@ In this task, you will configure pre-deployment gates.
     
 1. On the **Pre-deployment conditions** pane, set the **Pre-deployment approvals** slider to **Enabled (1)** and, in the **Approvers** text box, type and select your Azure DevOps account name **<inject key="AzureAdUserEmail"></inject> (2)**.
 
-    ![Azure devops](images/l4-05-50.png)
+    ![Azure devops](images/L4E3T1S3.png)
 
     > **Note:** In a real-life scenario, this should be a DevOps Team name alias instead of your name.  
 
@@ -508,7 +508,7 @@ In this task, you will configure pre-deployment gates.
 
 1. Notice the **Canary** Stage is in a **Pending Approval** state. Click the **Approve (1)** button, then select **Approve (2)** to continue the deployment.
 
-    ![Azure devops](images/l4-05-55.png) 
+    ![Azure devops](images/L4E3T1S11.png) 
 
 ## Task 2: Configure post-deployment gates for Azure Monitor
 
@@ -516,7 +516,7 @@ In this task, you will enable the post-deployment gate for the Canary Environmen
 
 1. Again, switch to the **New Release Pipeline** pane, click **Edit**.
 
-    ![Azure devops](images/l4-05-56.png)
+    ![Azure devops](images/L4E3T2S1.png)
 
 1. On the right edge of the rectangle representing the **Canary Environment** stage, click the oval shape representing the **Post-deployment conditions**.
 
@@ -595,15 +595,15 @@ In this task, you will first generate some alerts for the Canary Web App, follow
 
 1. Return to the Azure DevOps Portal, open the **eShopOnWeb_MultiStageYAML** Project. Navigate to **Pipelines (1)**, select **Releases (2)**, and select the **New Release Pipeline (3)**. Click the **Create Release (4)** button.
 
-    ![Azure devops](images/lab4-05-n2.png) 
+    ![Azure devops](images/L4E4T1S8.png) 
  
 1. On **Create a new release** page, click on **Create**.
 
-1. Select the Release pipeline.
+1. Select the **Release** pipeline.
 
-    ![portal](images/l4-05-67.png)
+    ![portal](images/L4E4T1S10.png)
    
-1. Wait for the Release pipeline to kick off, and **Approve (1)** the Canary Stage release action.
+1. Wait for the **Release** pipeline to kick off, and **Approve (1)** the Canary Stage release action.
 
 1. If prompted, click on **Approve (2)** again.
 

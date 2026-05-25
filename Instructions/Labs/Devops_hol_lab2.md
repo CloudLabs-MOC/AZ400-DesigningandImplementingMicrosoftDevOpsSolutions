@@ -37,13 +37,15 @@ If you don't already have an Azure DevOps organization, you signed in with your 
     
 1. On the Azure DevOps page, click on **Azure DevOps (1)** located at the top left corner and then click on **Organization Settings (2)** at the bottom left corner.
 
-    ![Azure DevOps](images/dev34.png)
+    ![Azure DevOps](images/L4.png)
     
-1. In the **Organization Settings** window on the left menu click on **Billing (1)** and select **Setup Billing (2)** then click on **Save (3)**.
+1. In the **Organization Settings** window on the left menu click on **Billing (1)** and verify the **Azure Subscription (2)** details which are visible, and then proceed to the next step.
+
+    ![Azure DevOps](images/L5.png)
+
+    >**Note:** If billing is not already configured, then click on **Save (3)**.
 
     ![Azure DevOps](images/dev35.png)
-
-    >**Note:** If billing is already configured, verify the subscription details are visible, and then proceed to the next step.
 
 1. On the **MS Hosted CI/CD** section under **Paid parallel jobs** enter value **1** **(1)** and at the end of the page click on **Save (2)**.
 
@@ -59,7 +61,7 @@ In this task, you will create an **eShopOnWeb** Azure DevOps project to be used 
 
 1. Click on **Azure DevOps** from the Billing page to create a new project.
 
-    ![Azure DevOps](images/l2-05-1.png)
+    ![Azure DevOps](images/L2E1T1S1.png)
  
 1. Click on **New Project**. Give your project the name  **eShopOnWeb (1)**, verify **Private (2)** under **Visibility**, and then choose **+ Create project (3)**.
 
@@ -71,7 +73,7 @@ In this task, you will import the eShopOnWeb Git repository that will be used by
 
 1. On the **eShopOnWeb** project. Click on **Repos (1)>Files (2) , Import a Repository**. Select **Import (3)**. On the **Import a Git Repository** window, paste the following URL https://github.com/CloudLabs-MOC/eShopOnWeb.git **(4)** and click **Import (5)**.
 
-      ![](images/l2-05-3.png)
+      ![](images/L2E1T2S1.png)
       
 1. The repository is organized in the following way:
     
@@ -83,15 +85,15 @@ In this task, you will import the eShopOnWeb Git repository that will be used by
          
     - **src** folder contains the .NET 6 website used in the lab scenarios.
          
-      ![](images/dev39.png)
+      ![](images/L2E1T2S2.png)
 
 1. Go to **Repos (1)>Branches (2)**, make sure the **main** branch is set as **default branch (3)**.
 
-      ![](images/l2-05-4.png)
+      ![](images/L2E1T2S3.png)
 
 1. If not, hover on the **main** branch, then click the **ellipsis (1)** on the right of the column. Click on **Set as default branch (2)**.
 
-      ![](images/l2-05-5.png)
+      ![](images/L2E1T2S4.png)
 
 
 # Exercise 2: Author YAML-based Azure DevOps pipelines
@@ -104,19 +106,19 @@ In this task, you will create a template-based Azure DevOps YAML pipeline.
 
 1. Go to **Pipelines (1)>Pipelines (2)**. Click on **Create Pipeline (3)** or the **New Pipeline** button.
 
-    ![](images/l2-05-6.png)  
+    ![](images/L2E2T1S1.png)  
 
 2. Select **Azure Repos Git (YAML)**
 
-    ![](images/l2-05-7.png)
+    ![](images/L2E2T1S2.png)
 
 3. Select the **eShopOnWeb** repository.
 
-    ![](images/dev44.png)
+    ![](images/L2E2T1S3.png)
 
 4. Select **Existing Azure Pipelines YAML File**
 
-    ![](images/dev45.png)
+    ![](images/L2E2T1S4.png)
 
 5. Select the path **/.ado/eshoponweb-ci-pr.yml (1)** file then click on **Continue (2)**.
 
@@ -132,11 +134,11 @@ In this task, you will create a template-based Azure DevOps YAML pipeline.
    - **DotNet Test:** .NET test driver used to execute unit tests.    
    - **DotNet Publish:** Publishes the application and its dependencies to a folder for deployment to a hosting system. In this case, it's **Build.ArtifactStagingDirectory**.
         
-     ![](images/dev47.png)
+     ![](images/L2E2T1S6.png)
 
 7. On the **Review your pipeline YAML** pane, click the down-facing caret symbol next to the **Run (1)** button, click **Save (2)**.
 
-    ![](images/l2-05-8.png)
+    ![](images/L2E2T1S7.png)
 
     >**Note:** We are just creating the pipeline definition for now, without running it. You will first set up an Azure DevOps agent pool and run the pipeline in a later exercise. 
 
@@ -154,7 +156,7 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
   
 1. On the **Personal Access Tokens (1)** pane, and click **+ New Token (2)**.
 
-    ![Azure DevOps](images/l2-05-9.png)
+    ![Azure DevOps](images/L2E3T1S2.png)
 
 1. On the **Create a new personal access token** pane, specify the following settings and click **Create (3)** (leave all others with their default values):
 
@@ -175,15 +177,15 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
 
 1. On the **Personal Access Token** pane of the Azure DevOps portal, click the **Azure DevOps** symbol in the upper left corner.
 
-    ![Azure DevOps](images/l2-05-11.png)
+    ![Azure DevOps](images/L2E3T1S6.png)
 
 1. Then click the **Organization settings** label in the lower left corner.
 
-    ![Azure DevOps](images/dev56.png)
+    ![Azure DevOps](images/L2E3T1S7.png)
 
 1. To the left side of the **Overview** pane, in the vertical menu, in the **Pipelines (1)** section, click **Agent pools (2)**. On the **Agent pools** pane, in the upper right corner, click **Add pool (3)**. 
 
-    ![Azure DevOps](images/l2-05-12.png)
+    ![Azure DevOps](images/L2E3T1S8.png)
 
 1. On the **Add agent pool** pane, in the **Pool type** dropdown list,
     
@@ -196,11 +198,11 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
     
 1. Back on the **Agent pools** pane, click the entry representing the newly created **devops-pool**. 
 
-    ![Azure DevOps](images/l2-05-13.png)
+    ![Azure DevOps](images/L2E3T1S10.png)
 
 1. On the **Jobs** tab of the **devops-pool** pane,  click the **New agent** button.
 
-    ![Azure DevOps](images/l2-05-14.png)
+    ![Azure DevOps](images/L2E3T1S11.png)
 
 1. On the **Get the agent** pane, ensure that the **Windows (1)** and **x64 (2)** tabs are selected, and click **Download (3)** to download the zip archive containing the agent binaries to download it into the local **Downloads** folder within your user profile.
 
@@ -260,19 +262,19 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
 
 1. Back on the **Agents (1)** tab of the **devops-pool** pane, note that the newly configured agent is listed with the **Online (2)** status. Click on the **Azure DevOps (3)** label from the top left corner.
 
-    ![Azure DevOps](images/l2-05-16.png)
+    ![Azure DevOps](images/L2E3T1S18.png)
 
 1. In the browser window displaying the list of projects, click the tile representing your **eShopOnWeb** project.
 
-    ![Azure DevOps](images/dev69.png)
+    ![Azure DevOps](images/L2E3T1S19.png)
  
 1. On the **eShopOnWeb** pane, in the vertical navigational pane on the left side, in the **Pipelines (1)** section, click **Pipelines (2)**. On the **Recent** tab of the **Pipelines** pane, select **eShopOnWeb (3)**.
 
-    ![Azure DevOps](images/l2-05-17.png)
+    ![Azure DevOps](images/L2E3T1S20.png)
 
 1. On the **eShopOnWeb** pane, select **Edit**.
 
-    ![Azure DevOps](images/l2-05-18.png)
+    ![Azure DevOps](images/L2E3T1S21.png)
 
 1. On the **eShopOnWeb** edit pane, in the existing YAML-based pipeline, replace line **13** which says `vmImage: ubuntu-latest` designating the target agent pool with the following content, designating the newly created self-hosted agent pool:
 
@@ -286,13 +288,13 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
 
     ![Azure DevOps](images/dev72.png)    
  
-    ![Azure DevOps](images/dev275.png)
+    ![Azure DevOps](images/L2E3T1S22i.png)
     
     > **WARNING:** Be careful with copy/paste, make sure you have the same indentation shown above. 
  
 1. On the **eShopOnWeb** edit pane, in the upper right corner of the pane, click **Validate + Save**.
 
-    ![Azure DevOps](images/dev276.png)
+    ![Azure DevOps](images/L2E3T1S23.png)
 
 1. On the **Validate and save** pane, click **Save** again. This will automatically trigger the build based on this pipeline. 
 
@@ -300,7 +302,7 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
 
 1. Click on **Run**.    
 
-    ![Azure DevOps](images/l2-05-19.png)
+    ![Azure DevOps](images/L2E3T1S25.png)
 
 1. Click on **Run** again to run the pipeline.
 
@@ -308,7 +310,7 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
 
 1. Click on **View** to provide the permission.
 
-    ![Azure DevOps](images/l2-05-21.png)
+    ![Azure DevOps](images/L2E3T1S27.png)
 
 1. Click on **Permit**.
 
@@ -320,19 +322,19 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
 
 1. Click on **Build**.  
 
-    ![Azure DevOps](images/l2-05-23.png)
+    ![Azure DevOps](images/L2E3T1S30.png)
 
 1. Wait until the build  succeeds.
 
-    ![Azure DevOps](images/l2-05-25.png)
+    ![Azure DevOps](images/L2E3T1S31.png)
 
-     >**Note:** It might take around 5 minutes to build.
+     >**Note:** It might take around 5 minutes to build. Please ensure this pipeline is executed then proceed with the next steps.
 
 1. Your pipeline will take a name based on the project name. Let's **rename** it to identify the pipeline better.
 
 1. Go to **Pipelines>Pipelines (1)** and click on the recently created pipeline. Click on the **ellipsis (2)** and **Rename/move (3)** option.
    
-    ![Azure DevOps](images/l2-05-26.png)
+    ![Azure DevOps](images/L2E3T1S33.png)
 
 1. Name it **eshoponweb-ci-pr (1)** and click on **Save (2)**.
 
@@ -351,7 +353,7 @@ In this task, you will open and configure the ADOGenerator Selenium project in V
 
 1. Click on **Azure DevOps** from the top left to navigate to the Azure DevOps page, from the bottom left, click on **Organization settings**, go to the **Pipelines (1)** section, and click **Settings (2)**. **Turn off** the **Disable creation of classic build pipelines** and **Disable creation of classic release pipelines (3)**.
 
-    ![Azure DevOps](images/dev304.png)
+    ![Azure DevOps](images/L2E4T1S2.png)
 
 1. On the Lab VM, search for **Visual Studio (1)** and then select **Visual studio 2022 (2)**.
 
@@ -419,7 +421,7 @@ In this task, you will open and configure the ADOGenerator Selenium project in V
 
 1. Navigate back to the **Azure DevOps**, you can see the newly created **Selenium project**.
 
-    ![Azure DevOps](images/dev308.png)
+    ![Azure DevOps](images/L2E4T1S16.png)
 
 ## Task 2: Configure agent on the VM
 
@@ -472,11 +474,11 @@ In this task, you will configure a self-hosted Azure DevOps agent on the Seleniu
 
 1. Choose **Azure DevOps (1)**, **Organization settings (2)**.
 
-    ![Azure DevOps](images/dev311.png)
+    ![Azure DevOps](images/L4.png)
 
 1. Choose **Agent pools (1)** and then select the **Default (1)** pool.
 
-    ![Azure DevOps](images/l2-05-32.png)
+    ![Azure DevOps](images/L2E4T2S15.png)
 
 1. Select the **Agents (1)** tab and choose **New agent (2)**.
 
@@ -524,17 +526,17 @@ In this task, you will configure a self-hosted Azure DevOps agent on the Seleniu
 
 1. Back on the **Agents (1)** tab of the **Default** pane, note that the newly configured agent is listed with the **Online (2)** status. Click on the **Azure DevOps (3)** label from the top left corner.
 
-    ![Azure DevOps](images/l2-05-35.png)
+    ![Azure DevOps](images/L2E4T2S25.png)
 
 1. Select the **Selenium** project.
 
 1. Go to **Releases (2)** under the **Pipelines (1)** tab. Select **Selenium release (3)** definition and click on **Edit (4)**.
 
-    ![Azure DevOps](images/l2-05-36.png)
+    ![Azure DevOps](images/L2E4T2S27.png)
 
 1. Click on the **Tasks (1)** drop-down and  Open the **Dev (2)** environment to see the three deployment phases.
 
-    ![Azure DevOps](images/dev317.png)
+    ![Azure DevOps](images/L2E4T2S28.png)
 
     ![Azure DevOps](images/dev318.png)    
 
@@ -556,11 +558,11 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
 1. Navigate to **Pipelines (1)** under Pipelines. Select **Selenium (2)** build pipeline.
 
-    ![Azure DevOps](images/l2-05-37.png) 
+    ![Azure DevOps](images/L2E4T3S1.png) 
 
 1. In the **Selenium** pipeline page, select **Edit** to modify the pipeline configuration.
 
-    ![Azure DevOps](images/l2-05-39n.png) 
+    ![Azure DevOps](images/L2E4T3S2.png) 
 
 1. Select the **Pipeline (1)** settings pane, set the **Agent Specification (2)** to **windows-2022**.
 
@@ -592,11 +594,11 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
 1. Navigate to **Pipelines (1)** under Pipelines. Select **Selenium (2)** build pipeline.
 
-    ![Azure DevOps](images/l2-05-37.png)
+    ![Azure DevOps](images/L2E4T3S1.png)
 
 1. Click **Run pipeline**.    
 
-    ![Azure DevOps](images/l2-05-38.png) 
+    ![Azure DevOps](images/L2E4T3S10.png) 
 
 1. Click on **Run** again.
 
@@ -606,13 +608,13 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
 1. Wait until the build succeeds.
 
-    ![Azure DevOps](images/l2-05-40n.png)
+    ![Azure DevOps](images/L2E4T3S14.png)
 
-     >**Note:** It might take around 5 minutes to complete.
+     >**Note:** It might take around 5 minutes to complete. Please ensure this pipeline is executed then proceed with the next steps.
 
 1. Once the build is successful, the release will be triggered. Navigate back to the **Releases (1)**  tab to see the deployment in progress. Click on the **Release-1 (2)**
 
-    ![Azure DevOps](images/l2-05-41.png)
+    ![Azure DevOps](images/L2E4T3S15.png)
 
     > **Note:** If any notification banner appears (such as release summary updates), close it by selecting the **X** icon.
 

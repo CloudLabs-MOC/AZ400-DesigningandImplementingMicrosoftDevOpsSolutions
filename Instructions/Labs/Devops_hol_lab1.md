@@ -197,11 +197,11 @@ In this task, you will modify the given GitHub workflow and execute it to deploy
 
 1. On the repository page, go to **Code**.
 
-    ![](images/l1-05-13.png)
+    ![](images/E2T2S2.png)
 
 1. Open the following file: **eShopOnWeb/.github (1)/workflows (2)/eshoponweb-cicd.yml (3)**. This workflow defines the CI/CD process for the given .NET 6 website code.
 
-    ![](images/l1-05-14.png)
+    ![](images/E2T2S3.png)
 
 1. Select the **Edit** (pencil icon). 
 
@@ -235,21 +235,21 @@ In this task, you will review the GitHub workflow execution.
 
 1. On the **eShopOnWeb** repository page, go to **Actions**.
 
-    ![GitHub workflow in progress](images/l1-05-20.png)
+    ![GitHub workflow in progress](images/E2T3S1.png)
 
 1. You will see the workflow setup on top before executing. Click on **Update eshoponweb-cicd.yml**, which is associated with **eShopOnWeb Build and Test**.
 
-    ![GitHub workflow in progress](images/l1-05-21.png)
+    ![GitHub workflow in progress](images/E2T3S2.png)
 
     >**NOTE:** If it shows you the **Workflows aren’t being run on this repository**, select **Enable Actions on this repository**.
 
    > And then on the select workflow that is **eShopOnWeb Build and Test (1)** page, select **Run workflow (2)** drop-down, and select **Run workflow (3)**.
 
-   ![GitHub workflow in progress](images/runworkflow.png)
+   ![GitHub workflow in progress](images/E2T3S2N.png)
 
 1. From the **Summary**, you can see the two workflow jobs, the status, and Artifacts retained from the execution. You can click on each job to review logs.
 
-    ![GitHub workflow in progress](images/l1-05-22.png)
+    ![GitHub workflow in progress](images/E2T3S3.png)
 
      >**NOTE:** The workflow might take around 10 minutes to complete. Please wait until it is _Succeeded_, as illustrated above.
      
