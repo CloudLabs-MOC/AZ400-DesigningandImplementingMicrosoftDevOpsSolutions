@@ -98,7 +98,7 @@ In this task, you will add a YAML build definition to the existing project.
    
     ![Import Repository](images/L4E0T3S7.png)
 
-     >**Note:** Wait for the pipeline build to succeed. It might take around 5 minutes.
+     >**Note:** Wait for the pipeline build to succeed. It might take around 5 minutes. Please ensure this pipeline is executed then proceed with the next steps.
    
      >**Note:** Each task from the YAML file is available for review, including any warnings and errors.
 

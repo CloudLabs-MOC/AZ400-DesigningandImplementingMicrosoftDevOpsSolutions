@@ -223,6 +223,8 @@ In this task, you will enable Continuous Integration by modifying the YAML build
     ![](images/l3-05-12.png)
 
     ![](images/L3E2T2S9i.png)
+
+    > **Note**: Please ensure this pipeline is executed then proceed with the next steps.
   
 ## Task 3: Test the CI pipeline
  
@@ -287,6 +289,8 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 1. On the **eshoponweb-ci** build, select the last run.
 
     ![](images/L3E2T3S15.png)
+
+    >**Note**: Please ensure this pipeline is executed then proceed with the next steps.
 
 1. After its successful execution, click on **Related (1) > Published (2)** to check the published artifacts:
            

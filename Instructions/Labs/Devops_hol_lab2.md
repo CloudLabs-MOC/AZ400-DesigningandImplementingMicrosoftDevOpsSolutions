@@ -328,7 +328,7 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
 
     ![Azure DevOps](images/L2E3T1S31.png)
 
-     >**Note:** It might take around 5 minutes to build.
+     >**Note:** It might take around 5 minutes to build. Please ensure this pipeline is executed then proceed with the next steps.
 
 1. Your pipeline will take a name based on the project name. Let's **rename** it to identify the pipeline better.
 
@@ -610,7 +610,7 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
     ![Azure DevOps](images/L2E4T3S14.png)
 
-     >**Note:** It might take around 5 minutes to complete.
+     >**Note:** It might take around 5 minutes to complete. Please ensure this pipeline is executed then proceed with the next steps.
 
 1. Once the build is successful, the release will be triggered. Navigate back to the **Releases (1)**  tab to see the deployment in progress. Click on the **Release-1 (2)**
 

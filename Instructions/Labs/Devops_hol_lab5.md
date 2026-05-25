@@ -105,6 +105,8 @@ In this task, you will create and trigger a build in Azure DevOps by editing an 
 
     ![Azure DevOps](images/L5E1T2S12.png)
 
+    > **Note:** Please ensure this pipeline is executed then proceed with the next steps.
+
 1. Navigate to **Mend Bolt** tab. This shows the list of all vulnerable open source components with Vulnerability Risk, Vulnerable Libraries, and Severity Distribution.
 
     ![Azure DevOps](images/L5E1T2S13.png)
