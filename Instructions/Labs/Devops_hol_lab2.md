@@ -50,6 +50,7 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 1. On the **MS Hosted CI/CD** section under **Paid parallel jobs** enter value **1** **(1)** and at the end of the page click on **Save (2)**.
 
     ![Azure DevOps](images/L6.png)
+    
     ![Azure DevOps](images/L6i.png)
    
 # Exercise 1: Configure the lab prerequisites 
