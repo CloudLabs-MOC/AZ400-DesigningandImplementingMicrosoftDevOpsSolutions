@@ -27,11 +27,11 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-1. On the **Get started with Azure DevOps**, click on **Continue**.
+1. On the **Get started with Azure DevOps**, name the project as leave the default name **(1)**, then click on **Continue (2)**.
 
-    ![Azure DevOps](images/dev32.png)
+    ![Azure DevOps](images/L2.png)
 
-1. On the next page, accept defaults, fill the captcha **(1)** and click on **Continue (2)**.
+    >**Next:** If prompted for captcha on the next page, accept defaults, fill the captcha **(1)** and click on **Continue (2)**.
 
     ![Azure DevOps](images/dev33.png)
     
