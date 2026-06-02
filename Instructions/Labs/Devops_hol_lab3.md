@@ -73,7 +73,7 @@ In this task, you will use the Azure DevOps portal to create a Pull Request, usi
 
     ![](images/dev94.png)
    
-1. Click on **Commit** again (leave default commit message).
+1. Update the Branch name to **Feature01**, then click on **Commit** again (leave default commit message), .
 
     ![](images/l3-05-06.png)
 
