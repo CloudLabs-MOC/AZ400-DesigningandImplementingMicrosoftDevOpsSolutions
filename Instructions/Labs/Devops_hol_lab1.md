@@ -139,6 +139,35 @@ In this task, you will create the Azure Service Principal used by GitHub to depl
 
       ![](images/dev11.png)
 
+1.  In the cloud shell command-line pane, enter the following command to sign into Azure.
+
+    ```
+    az login
+    ```
+    ![](images/dev11-4.png)
+
+    > **Note:** In most scenarios, just using *az login* will be sufficient. However, if you have subscriptions in multiple tenants, you may need to specify the tenant by using the *--tenant* parameter. See [Sign into Azure interactively using the Azure CLI](https://learn.microsoft.com/cli/azure/authenticate-azure-cli-interactively) for details.
+
+1.  Click on the **Link (1)** and copy the **code (2)** provided.
+
+    ![](images/dev11-5.png)
+
+1. In the new browser tab, when the **Enter code to allow access (1)** window appears, paste the copied code and select **Next (2)**.
+
+    ![](images/dev11-6.png)
+
+1. In the **Pick an account** dialog box, choose **ODL_User<inject key="DeploymentID"></inject>**. 
+
+    ![](images/dev11-7.png)
+
+1. In the **Are you trying to sign in to Microsoft Azure CLI?** dialog box, click **Continue**.
+
+    ![](images/dev11-8.png)
+
+1.  When the **Microsoft Azure Cross-platform Command Line Interface** window pops up, return to the browser tab with Cloud Shell open. 
+
+    ![](images/dev11-9.png)
+
 1. Once the Terminal starts, execute the following command **(1)**, replacing **SUBSCRIPTION-ID** and **RESOURCE-GROUP** with your identifiers (both can be found on the **Overview** page of the Resource Group):
 
    ```
@@ -213,7 +242,7 @@ In this task, you will modify the given GitHub workflow and execute it to deploy
 
 1. In the **env** section, make the following changes:
     - **RESOURCE-GROUP:** Replace `RESOURCE-GROUP` variable with **rg-devOps-eshopeonweb-<inject key="DeploymentID" enableCopy="false"/>** 
-    - **Location:** **westus**
+    - **Location:** **canadacentral**
     - **SUBSCRIPTION-ID:** Replace **YOUR-SUBS-ID** in **SUBSCRIPTION-ID**. You can find your subscription ID from the Overview page of **rg-devOps-eshopeonweb-<inject key="DeploymentID" enableCopy="false"/>** Resource group in Azure portal. 
     - **WEBAPP-NAME:** Enter **eshoponweb-webapp-<inject key="DeploymentID" enableCopy="false"/>**. It will be used to create a globally unique website using Azure App Service.
 

@@ -219,7 +219,7 @@ In this task, you will configure an Application Insights resource in the Azure p
   
     ![](images/dev150.png)
 
-1. Wait until the change takes effect.
+1. Wait until the change takes effect. Check the Notifications icon to ensure the changes.
 
     > **Note:** You will create monitor alerts here, which you will use in the later part of this lab.
 
@@ -312,7 +312,7 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
 1. From the **Artifact** rectangle, notice the **Continuous Integration Trigger** (lightning bolt) appearing. Click it to open the **Continuous deployment trigger** settings **(1)**.
     
-1. Enable the **continuous deployment trigger (2)** toggle to enable it. Leave all other settings at default and close the **Continuous deployment trigger** pane by clicking the **x** mark in its upper right corner.
+1. Enable the **continuous deployment trigger (2)** toggle to **enable** it. Leave all other settings at default and close the **Continuous deployment trigger** pane by clicking the **x** mark in its upper right corner.
 
      ![Azure devops](images/l4-05-36.png)  
    
@@ -443,6 +443,8 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 1. Verify that the web page (E-commerce website) loads successfully in a new web browser tab.
     
     ![portal](images/websitecan1.png)
+
+    > **Note:** It might take around 5-10 minutes to load the website.
    
 1. Switch back to the Azure portal interface, this time navigating  to the resource group **Web-RG**, in the list of resources, click the **Production** web app. 
 
@@ -455,6 +457,8 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 1. Verify that the web page loads successfully in a new web browser tab.
 
     ![portal](images/websitecan1.png)
+
+    > **Note:** It might take around 5-10 minutes to load the website.
    
 1. Close the web browser tab displaying the **EShopOnWeb** website.
 

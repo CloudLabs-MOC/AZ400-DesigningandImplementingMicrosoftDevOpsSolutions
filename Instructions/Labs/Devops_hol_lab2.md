@@ -27,13 +27,9 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-1. On the **Get started with Azure DevOps**, name the project as leave the default name **(1)**, then click on **Continue (2)**.
+1. On the **Get started with Azure DevOps**,click on **Continue**.
 
     ![Azure DevOps](images/L2.png)
-
-    >**Next:** If prompted for captcha on the next page, accept defaults, fill the captcha **(1)** and click on **Continue (2)**.
-
-    ![Azure DevOps](images/dev33.png)
     
 1. On the Azure DevOps page, click on **Azure DevOps (1)** located at the top left corner and then click on **Organization Settings (2)** at the bottom left corner.
 
@@ -620,11 +616,15 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
     > **Note:** If any notification banner appears (such as release summary updates), close it by selecting the **X** icon.
 
+    > **Note:** If Releases fails, follow the below steps.
+
+    ![Azure DevOps](images/img467.png)
+
 1. When the Selenium test execution phase starts, you can see the Selenium test execution jobs. Wait until the jobs are completed successfully.
 
     ![Azure DevOps](images/l2-05-43.png)
     
-    - If the **IIS deployment** fails, please follow the steps below to fix that.
+1. If the **IIS deployment** fails, please follow the steps below to fix that.
     - In SeleniumVM search bar, search for **Services (1)** and then select **Services (2)**
 
       ![Azure DevOps](images/dev329.png)    
@@ -649,7 +649,7 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
       ![Azure DevOps](images/lab2-05-09.png)
 
-1. Wait for the Selenium test execution jobs completion. It might take around 10-15 minutes.       
+1. Wait for the Selenium test execution jobs completion. It might take around **10-15 minutes**.       
 
 1. In this lab, we are executing **four UI** test scenarios configured to run on Chrome and Firefox browsers.
 
