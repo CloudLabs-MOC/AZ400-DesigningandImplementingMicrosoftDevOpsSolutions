@@ -1,6 +1,6 @@
 # Lab 5: Implementing Security and Compliance in an Azure Pipeline 
 
-## Estimated duration: 30 Minutes
+### Estimated duration: 30 Minutes
 
 ## Lab Scenario
 
@@ -32,7 +32,7 @@ In this task, you will activate the Mend Bolt extension in Azure DevOps by insta
 
     ![Azure DevOps](images/L5E1T1S3.png)
 
-1. Search for **Mend Bolt (1)**, click on **Search (2)** icon and then select from the results **(3)**.
+1. Search for **Mend Bolt (1)**, click on **Search (2)** icon and then select **Mend Bolt** from the results **(3)**.
 
     ![Azure DevOps](images/l4-05-74.png)
 

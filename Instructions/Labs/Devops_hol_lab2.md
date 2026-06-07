@@ -1,6 +1,6 @@
 # Lab 02: Configuring Agent Pools and Understanding Pipeline Styles 
 
-## Estimated duration: 60 Minutes
+### Estimated duration: 60 Minutes
 
 ## Lab Scenario
 
@@ -238,10 +238,10 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
 
     | Setting | Value |
     | ------- | ----- |
-    | Enter server URL | Enter https://dev.azure.com/odluser<inject key="DeploymentID" enableCopy="false"/>/ |
+    | Enter server URL | https://dev.azure.com/odluser<inject key="DeploymentID" enableCopy="false"/>/ |
     | Enter authentication type (press enter for PAT) | **Hit Enter** |
     | Enter personal access token | The access token you recorded earlier in this task |
-    | Enter agent pool (press enter for default) | enter **devops-pool** |
+    | Enter agent pool (press enter for default) | **devops-pool** |
     | Enter agent name (press enter for VM-<inject key="DeploymentID" enableCopy="false"/>) | **Hit Enter** |
     | Enter work folder (press enter for _work) | **Hit Enter** |
     | **(Only if shown)** Enter Perform an unzip for tasks for each step. (Press Enter for N) | **WARNING:** only press **Enter** if the message is shown|
@@ -508,7 +508,7 @@ In this task, you will configure a self-hosted Azure DevOps agent on the Seleniu
 
     | Setting | Value |
     | ------- | ----- |
-    | Enter server URL | Enter https://dev.azure.com/odluser<inject key="DeploymentID" enableCopy="false"/>/ (Copy completely)|
+    | Enter server URL (Copy completely) | https://dev.azure.com/odluser<inject key="DeploymentID" enableCopy="false"/>/ |
     | Enter authentication type (press enter for PAT) | **Hit Enter** |
     | Enter personal access token | The access token you recorded earlier in this task |
     | Enter agent pool (press enter for default) | **Hit Enter** |

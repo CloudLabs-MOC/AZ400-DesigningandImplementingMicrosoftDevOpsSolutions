@@ -1,6 +1,6 @@
 # Lab 01: Implementing GitHub Actions for CI/CD
 
-## Estimated duration: 40 Minutes
+### Estimated duration: 40 Minutes
 
 ## Lab Scenario
 
@@ -23,7 +23,7 @@ In this lab you will complete the following exercises:
 
 1. If you already have a GitHub account that you can use for this lab, proceed with Exercise 1, follow the instructions to create an account.
 
-1. Navigate to the https://github.com/ **(1)** and then Click on **Sign up (2)** in the top right corner.
+1. Navigate to the ```https://github.com/``` **(1)** and then Click on **Sign up (2)** in the top right corner.
 
    ![Github](images/dev263.png)
    
@@ -77,7 +77,7 @@ In this task, you will create an empty public GitHub repository and import the e
     
     | Field | Value |
     | --- | --- |
-    | The URL for your source repository| https://github.com/CloudLabs-MOC/eShopOnWeb **(1)** |
+    | The URL for your source repository| ```https://github.com/CloudLabs-MOC/eShopOnWeb``` **(1)** |
     | Owner | Leave your default username **(2)** |
     | Repository Name | **eShopOnWeb (3)** |
     | Privacy | **Public** **(4)** | 

@@ -1,6 +1,6 @@
 # Lab 4: Controlling Deployments using Release Gates 
 
-## Estimated timing: 70 Minutes
+### Estimated timing: 70 Minutes
 
 ## Lab Scenario
 
@@ -38,7 +38,7 @@ In this task you will import the eShopOnWeb Git repository that will be used by 
 
 1. Access the previously created **eShopOnWeb_MultiStageYAML** project.
 
-1. Navigate to **Repos (1)>Files (2)** and then click on **Import (3)** within the **Import a repository** card. On the **Import a Git Repository** window, paste the following URL https://github.com/CloudLabs-MOC/eShopOnWeb.git **(4)** and click on **Import (5):**
+1. Navigate to **Repos (1)>Files (2)** and then click on **Import (3)** within the **Import a repository** card. On the **Import a Git Repository** window, paste the following URL ```https://github.com/CloudLabs-MOC/eShopOnWeb.git``` **(4)** and click on **Import (5):**
 
     ![Import Repository](images/L4E0T2S2.png)
 
@@ -184,8 +184,8 @@ In this task, you will configure an Application Insights resource in the Azure p
     | --- | --- |
     | Subscription | Leave the default one **(1)** |    
     | Resource group | **Web-RG (2)** |
-    | Name | the name of the Canary web app you recorded in the previous task **(3)** |
-    | Region | the same Azure region to which you deployed the web apps earlier in the previous task **(4)** |
+    | Name | The name of the Canary web app you recorded in the previous task **(3)** |
+    | Region | The same Azure region to which you deployed the web apps earlier in the previous task **(4)** |
     
     ![CloudShell](images/l4-05-18.png) 
 
@@ -231,7 +231,7 @@ In this task, you will configure an Application Insights resource in the Azure p
 
     ![](images/l4-05-25.png)
        
-1. On the **Create an alert rule** blade, provide the following details and then click on **Next: Actions > (7):**
+1. On the **Create an alert rule** blade, provide the following details.
 
     - **Select a signal:** Select  **Failed Requests(1)** from the drop-down. 
     - Leave the **Threshold** set to **Static(2)**
@@ -239,6 +239,7 @@ In this task, you will configure an Application Insights resource in the Azure p
     - Operator: **Greater Than (4)**
     - Unit: **Count (5)**
     - Threshold value: type **0** **(6)**
+    - Click on **Next: Actions > (7)**
 
       ![](images/l4-05-26.png)
     
@@ -348,7 +349,7 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
 1. Further update the following settings in the App Service Deploy Task
 
-    - In the **Package or Folder** field, update the default value of "$(System.DefaultWorkingDirectory)/\*\*/\*.zip" to **"$(System.DefaultWorkingDirectory)/\*\*/Web.zip"** **(1)**
+    - In the **Package or Folder** field, update the default value of `$(System.DefaultWorkingDirectory)/**/*.zip` to `$(System.DefaultWorkingDirectory)/**/Web.zip` **(1)**.
 
     - Scroll down and open the **Application and Configuration Settings** pane and enter `-UseOnlyInMemoryDatabase true -ASPNETCORE_ENVIRONMENT Development` in the **App settings** box **(2)**.
 
@@ -370,7 +371,7 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
      ![Azure devops](images/l4-05-37.png)
 
-1. Select the Azure App Service Deploy Agent.
+1. Select the **Azure App Service Deploy Agent**
 
     ![Azure devops](images/dev289.png)    
 
@@ -386,7 +387,7 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
 
 1. Further update the following settings in the App Service Deploy Task
 
-    - In the **Package or Folder** field, update the default value of "$(System.DefaultWorkingDirectory)/\*\*/\*.zip" to **"$(System.DefaultWorkingDirectory)/\*\*/Web.zip"** **(1)**
+    - In the **Package or Folder** field, replace the default value **`$(System.DefaultWorkingDirectory)/**/*.zip`** with **`$(System.DefaultWorkingDirectory)/**/Web.zip`** **(1)**.
 
     - Scroll down and open the **Application and Configuration Settings** pane and enter `-UseOnlyInMemoryDatabase true -ASPNETCORE_ENVIRONMENT Development` in the **App settings** box **(2)**
 
