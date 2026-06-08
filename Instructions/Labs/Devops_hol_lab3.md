@@ -1,6 +1,6 @@
 # Lab 3:  Enabling Continuous Integration with Azure Pipelines  
 
-## Estimated timing: 40 Minutes
+### Estimated timing: 40 Minutes
 
 ## Lab Scenario
 
@@ -178,10 +178,10 @@ In this task, you will enable Continuous Integration by modifying the YAML build
       trigger:
        branches:
         include:
-        - main
-      paths:
-        include:
-        - src/web/*
+          - main
+       paths:
+         include:
+           - src/web/*
     ``` 
 
      ![](images/L3E2T2S1.png)

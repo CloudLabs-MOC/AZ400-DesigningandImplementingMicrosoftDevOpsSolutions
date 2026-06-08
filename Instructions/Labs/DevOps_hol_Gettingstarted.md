@@ -2,10 +2,13 @@
 
 ### Overall Estimated Duration: 4 Hours
 
+## Lab Scenarios
+
+Contoso Retail, a growing e-commerce company, wants to modernize its software delivery process by adopting DevOps practices across its development and operations teams. As a DevOps Engineer at Contoso, you are responsible for implementing automated CI/CD workflows using GitHub and Azure DevOps, securing deployments with service principals and secrets management, configuring self-hosted agents, enforcing code quality through branch policies and pull requests, and enabling controlled releases with deployment gates. You will also integrate security scanning to identify open-source vulnerabilities and ensure reliable, secure, and compliant application deployments from development to production environments.
+
 ## Introduction - Overview of GitHub and Collaborative Development
 
 In this hands-on lab, you will learn how to implement end-to-end DevOps practices using Azure DevOps and GitHub. You will begin by deploying the eShopOnWeb application using GitHub Actions, creating a service principal, and securing credentials with GitHub secrets. Next, you'll configure self-hosted agents and use YAML pipelines to enable code-based CI/CD workflows with support for branching, versioning, and pull requests. You will define build pipelines, enforce branch policies for continuous integration, and manage releases using gates that monitor app health and alerts. Finally, you'll integrate the Mend Bolt extension to secure your pipelines by detecting open-source vulnerabilities, ensuring secure and compliant deployments.
-
 
 ## Objectives
 
@@ -63,7 +66,7 @@ The architecture for this lab involves the following key components:
 
 - **Mend Bolt Extension:** Scans open-source dependencies for vulnerabilities, ensuring security and compliance within the CI/CD pipeline.
 
-## Getting Started with the Lab
+# Getting Started with the Lab
  
 ## Accessing Your Lab Environment
  
@@ -73,7 +76,7 @@ Once you are ready to dive in, your virtual machine and **Guide** will be at you
 
 ## Lab Guide Zoom In/Zoom Out
 
-To adjust the zoom level for the environment page, click the **A↕: 100%** icon next to the lab environment's timer.
+To adjust the zoom level for the environment page, click the **A↕** icon next to the lab environment's timer.
 
    ![Manage Your Virtual Machine](images/dpg2.png)
 
@@ -124,9 +127,9 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
  
        ![Enter Your Username](images/afg7.png)
  
-1. Next, provide your password:
+1. Next, provide your Temporary Access Pass:
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
        ![Enter Your Password](images/l1-05-g1.png)
 
