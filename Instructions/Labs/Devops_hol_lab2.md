@@ -35,13 +35,13 @@ If you don't already have an Azure DevOps organization, you signed in with your 
 
     ![Azure DevOps](images/L4.png)
     
-1. In the **Organization Settings** window on the left menu click on **Billing (1)** and verify the **Azure Subscription (2)** details which are visible, and then proceed to the next step.
+1. In the **Organization Settings** window on the left menu click on **Billing (1)** under General   and verify the **Azure Subscription (2)** details which are visible, and then proceed to the next step.
 
     ![Azure DevOps](images/L5.png)
 
     >**Note:** If billing is not already configured, then click on **Save (3)**.
-
-    ![Azure DevOps](images/dev35.png)
+    >
+    >![Azure DevOps](images/dev35.png)
 
 1. On the **MS Hosted CI/CD** section under **Paid parallel jobs** enter value **1** **(1)** and at the end of the page click on **Save (2)**.
 
@@ -136,9 +136,9 @@ In this task, you will create a template-based Azure DevOps YAML pipeline.
 
 7. On the **Review your pipeline YAML** pane, click the down-facing caret symbol next to the **Run (1)** button, click **Save (2)**.
 
-    ![](images/L2E2T1S7.png)
+    >**Note:** We are just creating the pipeline definition for now, without running it. You will first set up an Azure DevOps agent pool and run the pipeline in a later exercise.
 
-    >**Note:** We are just creating the pipeline definition for now, without running it. You will first set up an Azure DevOps agent pool and run the pipeline in a later exercise. 
+    ![](images/L2E2T1S7.png) 
 
 # Exercise 3: Manage Azure DevOps agent pools
 
@@ -167,7 +167,7 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
 
 1. On the **Success** pane, copy the value of the personal access token to the Clipboard.
 
-    > **Note:** Make sure you **copy** and paste the token in a notepad. You will not be able to retrieve it once you close this pane. 
+    > **Note:** Make sure you **copy** and paste the token in a **notepad**. You will not be able to retrieve it once you close this pane. 
 
     ![Azure DevOps](images/dev53.png)
 
@@ -307,6 +307,8 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
     ![Azure DevOps](images/l2-05-20.png)
 
 1. Click on **View** to provide the permission.
+  
+    >**Note**: It may take 1–3 minutes for the View permission to become available.
 
     ![Azure DevOps](images/L2E3T1S27.png)
 
@@ -324,13 +326,13 @@ In this task, you will configure your lab Virtual Machine as an Azure DevOps sel
 
 1. Wait until the build  succeeds.
 
-    ![Azure DevOps](images/L2E3T1S31.png)
+    >**Note:** It might take around 10-15 minutes to build. Please ensure this pipeline is executed then proceed with the next steps.
 
-     >**Note:** It might take around 5 minutes to build. Please ensure this pipeline is executed then proceed with the next steps.
+    ![Azure DevOps](images/L2E3T1S31.png)
 
 1. Your pipeline will take a name based on the project name. Let's **rename** it to identify the pipeline better.
 
-1. Go to **Pipelines>Pipelines (1)** and click on the recently created pipeline. Click on the **ellipsis (2)** and **Rename/move (3)** option.
+1. Go to **Pipelines>Pipelines** and click on the recently created pipeline. Click on the **ellipsis (1)** and **Rename/move (2)** option.
    
     ![Azure DevOps](images/L2E3T1S33.png)
 
@@ -386,8 +388,8 @@ In this task, you will open and configure the ADOGenerator Selenium project in V
     ![Azure DevOps](images/dev300.png)
 
     >**Note:** If the **GitHub Copilot Chat** pane is open, select the **Close (X)** button to close it and view the projects.
-
-    ![Azure DevOps](images/lab2-05-01.png)
+    >
+    >![Azure DevOps](images/lab2-05-01.png)
 
 1. Right-click on the **ADOGenerator project** in the Solution Explorer **(1)**. and select **Set as Startup Project (2)**.    
 
@@ -437,7 +439,7 @@ In this task, you will configure a self-hosted Azure DevOps agent on the Seleniu
 
     ![Azure DevOps](images/l2-05-31.png) 
 
-1. Select **Keep**.
+1. Select **Keep** in the downloads notification.
 
 1. From the downloads, click on **Open file**.
 
@@ -470,11 +472,11 @@ In this task, you will configure a self-hosted Azure DevOps agent on the Seleniu
 
     * Password: <inject key="AzureAdUserPassword"></inject>
 
-1. Choose **Azure DevOps (1)**, **Organization settings (2)**.
+1. Choose **Azure DevOps (1)** on the top left corner and select **Organization settings (2)** from the bottom left corner.
 
     ![Azure DevOps](images/L4.png)
 
-1. Choose **Agent pools (1)** and then select the **Default (1)** pool.
+1. Choose **Agent pools (1)** and then select the **Default (2)** pool.
 
     ![Azure DevOps](images/L2E4T2S15.png)
 
@@ -550,7 +552,7 @@ In this task, you will configure a self-hosted Azure DevOps agent on the Seleniu
 
     ![Azure DevOps](images/dev322.png)
 
-## Task 3: Exercise 3: Trigger Build and Release
+## Task 3: Trigger Build and Release
 
 In this task, we will trigger the Build to compile Selenium C# scripts along with the Web application. The resulting binaries are copied to the Azure VM, and finally, the Selenium scripts are executed as part of the automated Release.
 
@@ -562,7 +564,7 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
     ![Azure DevOps](images/L2E4T3S2.png) 
 
-1. Select the **Pipeline (1)** settings pane, set the **Agent Specification (2)** to **windows-2022**.
+1. Select the **Pipeline (1)** settings pane, set the **Agent Specification** to **windows-2022 (2)**.
 
     ![Azure DevOps](images/lab2-05-02.png)
 
@@ -606,9 +608,9 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
 
 1. Wait until the build succeeds.
 
-    ![Azure DevOps](images/L2E4T3S14.png)
-
      >**Note:** It might take around 5 minutes to complete. Please ensure this pipeline is executed then proceed with the next steps.
+
+    ![Azure DevOps](images/L2E4T3S14.png)
 
 1. Once the build is successful, the release will be triggered. Navigate back to the **Releases (1)**  tab to see the deployment in progress. Click on the **Release-1 (2)**
 
@@ -617,8 +619,8 @@ In this task, we will trigger the Build to compile Selenium C# scripts along wit
     > **Note:** If any notification banner appears (such as release summary updates), close it by selecting the **X** icon.
 
     > **Note:** If Releases fails, follow the below steps.
-
-    ![Azure DevOps](images/img467.png)
+    >
+    >![Azure DevOps](images/img467.png)
 
 1. When the Selenium test execution phase starts, you can see the Selenium test execution jobs. Wait until the jobs are completed successfully.
 

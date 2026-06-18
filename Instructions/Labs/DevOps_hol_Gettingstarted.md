@@ -2,7 +2,7 @@
 
 ### Overall Estimated Duration: 4 Hours
 
-## Lab Scenarios
+## Scenario
 
 Contoso Retail, a growing e-commerce company, wants to modernize its software delivery process by adopting DevOps practices across its development and operations teams. As a DevOps Engineer at Contoso, you are responsible for implementing automated CI/CD workflows using GitHub and Azure DevOps, securing deployments with service principals and secrets management, configuring self-hosted agents, enforcing code quality through branch policies and pull requests, and enabling controlled releases with deployment gates. You will also integrate security scanning to identify open-source vulnerabilities and ensure reliable, secure, and compliant application deployments from development to production environments.
 
@@ -118,18 +118,18 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
    ![Launch Azure Portal](images/afg6.png)
 
    > **Note:** If you see any open PowerShell prompts running, please minimize them and proceed with the next steps.
-   
-   ![Launch Azure Portal](images/lab1-05-p1.png)
+   >
+   >![Launch Azure Portal](images/lab1-05-p1.png)
 
-1. You will see the **Sign in to the Microsoft Azure** tab. Here, enter your credentials:
+1. You will see the **Sign in to the Microsoft Azure** tab. Here, enter your credentials and click **Next (2)**.
  
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
  
        ![Enter Your Username](images/afg7.png)
  
-1. Next, provide your Temporary Access Pass:
+1. Next, provide your Temporary Access Pass and click **Sign in (2)**:
  
-   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject> **(1)**
  
        ![Enter Your Password](images/l1-05-g1.png)
 
