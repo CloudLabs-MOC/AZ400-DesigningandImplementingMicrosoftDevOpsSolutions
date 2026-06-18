@@ -20,11 +20,7 @@ In this exercise, you will implement security and compliance in an Azure DevOps 
 
 In this task, you will activate the Mend Bolt extension in Azure DevOps by installing it from the marketplace and setting up the free version for use in your pipeline.
 
-1. On the Azure DevOps page, click on **Azure DevOps** located in the top left corner.
-
-    ![Azure DevOps](images/L5E1T1S1.png)
-
-1. Then click on **Organization Settings** at the bottom  left corner. 
+1. On the Azure DevOps page, click on **Azure DevOps (1)** located in the top left corner.Then click on **Organization Settings (2)** at the bottom  left corner. 
 
     ![Azure DevOps](images/L4.png)
 

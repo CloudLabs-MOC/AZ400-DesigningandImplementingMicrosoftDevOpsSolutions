@@ -35,7 +35,7 @@ In this task, you will add policies to the main branch and only allow changes us
 
     ![](images/l3-05-03.png)
 
-1. On the Build pipeline list, select **eshoponweb-ci-pr (1)** then click **Save (1)**.
+1. On the Build pipeline list, select **eshoponweb-ci-pr (1)** then click **Save (2)**.
 
     ![](images/dev88.png)
       
@@ -218,6 +218,8 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 
     ![](images/L3E2T2S8.png)
 
+    >**Note:** It might take around 3-5 minutes.
+
 1. On the **Complete Pull Request** tab, select only **Complete associated work items after merging (1)** checkbox  and Click on **Complete Merge (2)**
 
     ![](images/l3-05-12.png)
@@ -292,7 +294,7 @@ In this task, you will enable Continuous Integration by modifying the YAML build
 
     >**Note**: Please ensure this pipeline is executed then proceed with the next steps.
 
-1. After its successful execution, click on **Related (1) > Published (2)** to check the published artifacts:
+1. After its successful execution, click on **Related  > Published** to check the published artifacts:
            
     ![](images/L3E2T3S16.png) 
      

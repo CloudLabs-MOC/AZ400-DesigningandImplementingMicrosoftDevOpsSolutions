@@ -175,9 +175,9 @@ In this task, you will create the Azure Service Principal used by GitHub to depl
    ```
 
     >**NOTE:** To get the **SUBSCRIPTION-ID** and **RESOURCE-GROUP**, In the Azure portal navigate to **rg-devOps-eshopeonweb-<inject key="DeploymentID" enableCopy="false"/>** Resource group then copy the **Resource group name (1)** and **SUBSCRIPTION-ID (2)**.
+    >
+    > ![](images/l1-05-08.png)
 
-     ![](images/l1-05-08.png)
-    
     >**NOTE:** Make sure this is typed or pasted as a single line!
     
     >**NOTE:** This command will create a Service Principal with Contributor access to the Resource Group created before. This way, we make sure GitHub Actions will only have the permissions needed to interact with this Resource Group (not the rest of the subscription).
@@ -272,9 +272,9 @@ In this task, you will review the GitHub workflow execution.
 
     >**NOTE:** If it shows you the **Workflows aren’t being run on this repository**, select **Enable Actions on this repository**.
 
-   > And then on the select workflow that is **eShopOnWeb Build and Test (1)** page, select **Run workflow (2)** drop-down, and select **Run workflow (3)**.
-
-   ![GitHub workflow in progress](images/E2T3S2N.png)
+    > And then on the select workflow that is **eShopOnWeb Build and Test (1)** page, select **Run workflow (2)** drop-down, and select **Run workflow (3)**.
+    >
+    >![GitHub workflow in progress](images/E2T3S2N.png)
 
 1. From the **Summary**, you can see the two workflow jobs, the status, and Artifacts retained from the execution. You can click on each job to review logs.
 

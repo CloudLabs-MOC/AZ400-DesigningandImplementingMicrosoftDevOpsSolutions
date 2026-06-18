@@ -59,8 +59,8 @@ In this task you will import the eShopOnWeb Git repository that will be used by 
     >**Note:** If there is only one branch, then it is considered as the default branch automatically. You can proceed with the next task.
 
     >**Note:** If not, on the **Branches** **(1)**, hover on the **main** branch, then click the ellipsis on the right of the column **(2)**. Click on **Set as default branch (3)**.
-
-    ![Import Repository](images/L4E0T2S4n.png)
+    >
+    >![Import Repository](images/L4E0T2S4n.png)
 
 ## Task 3: Configure CI Pipeline as Code with YAML in Azure DevOps
 
@@ -189,7 +189,7 @@ In this task, you will configure an Application Insights resource in the Azure p
     
     ![CloudShell](images/l4-05-18.png) 
 
-     > **Note:** Disregard the deprecation message. This is required to prevent failures of the Enable Continuous Integration DevOps task you will be using later in this lab.
+    > **Note:** Disregard the deprecation message. This is required to prevent failures of the Enable Continuous Integration DevOps task you will be using later in this lab.
 
 1. Then click **Create**.
    
@@ -227,7 +227,7 @@ In this task, you will configure an Application Insights resource in the Azure p
 
     ![](images/l4-05-24.png)
 
-1. On the Application Insights resource blade, in the **Monitoring** section, click **Alerts (1)** and then click **+ Create (2) > Alert rule (3)**.
+1. On the Application Insights resource blade, in the **Monitoring (1)** section, click **Alerts (2)** and then click **+ Create (3) > Alert rule (4)**.
 
     ![](images/l4-05-25.png)
        
@@ -275,9 +275,9 @@ In this task, you will set up the release tasks as part of the Release Pipeline.
     
     ![Azure devops](images/L4E2T1S1.png)
    
-     > **Note** - If you are unable to see the **Releases** under pipelines, navigate to the Azure DevOps page, from the bottom left, click on **Organization settings**, go to the **Pipelines (1)** section, and click **Settings (2)**. **Turn off(3)** the **Disable creation of classic release pipelines**.
-   
-    ![Azure devops](images/lab2releaseenable.png)
+    > **Note** - If you are unable to see the **Releases** under pipelines, navigate to the Azure DevOps page, from the bottom left, click on **Organization settings**, go to the **Pipelines (1)** section, and click **Settings (2)**. **Turn off(3)** the **Disable creation of classic release pipelines**.
+    >
+    >![Azure devops](images/lab2releaseenable.png)
    
 1. Navigate back to your project and now you will be able to see the releases under pipelines   
   
